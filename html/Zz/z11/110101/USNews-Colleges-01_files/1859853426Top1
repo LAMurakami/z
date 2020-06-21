@@ -1,0 +1,14 @@
+document.write ('<!-- Rubicon CDK Javascript Tag -->\n');
+document.write ('<!-- Site: U.S. News   Partner: 24 7 Real Media   Size: 728x90 -->\n');
+document.write ('<script language="javascript" type="text/javascript">\n');
+document.write ('  document.write(');
+document.write ("'");
+document.write ('<script type="text/javascript" language="javascript" src="http://optimized-by.rubiconproject.com/a/dk.js?defaulting_ad=x3035df.js&size_id=2&account_id=7715&site_id=12318&size=728x90"><\\');
+document.write ('/scr');
+document.write ("'");
+document.write (' + ');
+document.write ("'");
+document.write ('ipt>');
+document.write ("'");
+document.write (');\n');
+document.write ('</script>\n');

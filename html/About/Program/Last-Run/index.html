@@ -1,0 +1,57 @@
+<title>LAM Alaska About Last-Run program</title>
+<!-- $Id$ -->
+<center><h1><a href="/Public/Scripts/Last-Run.cgi-pl">Last-Run</a>
+ example program documentation</h1></center>
+<ul><li>
+Program lists the 'Last Run Date Time' and 'Last Run epoch time'
+ from the configuration file and Current Date Time and epoch time.
+<br><br><li>
+The program also shows the configuration file with the updated
+ parameters.
+<br><br><li>
+If you are the only one running the program you can see the
+ current time become the last run time when you use the browser
+ reload or refresh key.
+</ul>
+The Last-Run example program is based on the
+<a href="/About/Program/Better-Config-File/">Better Configuration File</a>
+program.  This program uses the basic Better Configuration File concept
+along with the second enhancement.  This enhancement expects that all
+lines of the configuration file conform to the basic Better Configuration
+File concept of parameter lines, blank lines and comment lines entered in
+any order but without the alternate end of the configuration file.  It
+then updates parameters in the configuration file during the run.  This
+example only updates a last run date time stamp.  All other parts of the
+configuration file are left intact and even leading or trailing spaces on
+the parameter name side of the parameter line are left unchanged.
+<br><br>
+I tested Last-Run with
+<a href="http://z.lam1.us/Zz/z09/z0901/090127/Last-Run-01-Cannot-Open.html">
+
+    no read access</a> to the configuration file and
+
+<a href="http://z.lam1.us/Zz/z09/z0901/090127/Last-Run-01-Cannot-Update.html">
+
+    no write access</a> to the configuration file
+
+and cleaned up the error pages.
+I decided to include the program header which includes a link to the
+<a href="/About/Program/Last-Run/">program documentation</a> in the
+error pages.  I also added bolding to the cause of the error returned when
+the open request failed.  In this testing case it was Permission denied
+caused by setting permissions at 600 and 644 to get the cannot open and
+cannot update error pages.
+
+<br><br>
+
+I published the above links after creating .html files from the .htm files
+captured by my browser by stripping the head and menuBar information so that
+the z.lam1.us menuBar will be the only one displayed.
+<hr>
+Wednesday, January 28, 2009 @ 1:46:10 AM (Alaska Time) - After publishing
+ this page and the program I noticed that I was not preserving comments
+ if present on parameter lines that were being updated so I fixed this.
+ An updated parameter is preceded and followed by a single space and
+ additional white space between the '=' and the parameter or between
+ the parameter and the '#' is now the only thing changed along with
+ a parameter update.

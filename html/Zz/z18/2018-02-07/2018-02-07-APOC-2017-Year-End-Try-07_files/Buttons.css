@@ -1,0 +1,179 @@
+/* 
+    These elements are required for each web application and are stored in shared folder.
+    Modifications will affect all web applications.
+*/
+
+/** Buttons **/
+
+
+/* Common Button Features */
+
+.SmallRedButton:visited, .SmallBlueButton:visited, .SmallGreyButton:visited,
+.BlueButton:visited, .BigBlueButton:visited, .BiggerBlueButton:visited, .BiggestBlueButton:visited,
+.RedButton:visited, .BigRedButton:visited, .BiggerRedButton:visited, .BiggestRedButton:visited, .RedButton3:visited,
+.GreyButton:visited, .BigGreyButton:visited, .BiggerGreyButton:visited, .BiggestGreyButton:visited,
+.SmallRedButton, .SmallBlueButton, .SmallGreyButton,
+.BlueButton, .BigBlueButton, .BiggerBlueButton, .BiggestBlueButton,
+.RedButton, .BigRedButton, .BiggerRedButton, .BiggestRedButton, .RedButton3,
+.GreyButton, .BigGreyButton, .BiggerGreyButton, .BiggestGreyButton
+{
+	-webkit-border-top-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	border-top-left-radius:3px;
+	-webkit-border-top-right-radius:3px;
+	-moz-border-radius-topright:3px;
+	border-top-right-radius:3px;
+	-webkit-border-bottom-right-radius:3px;
+	-moz-border-radius-bottomright:3px;
+	border-bottom-right-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-bottom-left-radius:3px;
+	
+	text-indent:0;
+	display:inline-block;
+	color:#ffffff;
+	cursor: pointer;
+	
+	padding: 1px 6px;
+	
+	align-items: flex-start;
+    box-sizing: border-box;
+    
+    font-weight: normal;
+	
+	text-decoration:none;
+	text-align:center;
+}
+
+.SmallRedButton, .SmallBlueButton, .SmallGreyButton
+{
+    height:17px;
+	line-height:14px;
+	
+	font-size: 12px;
+	font-weight: normal;
+	
+	margin:  2px;
+}
+
+.BlueButton, .BigBlueButton, .BiggerBlueButton, .BiggestBlueButton,
+.RedButton, .BigRedButton, .BiggerRedButton, .BiggestRedButton, .RedButton3,
+.GreyButton, .BigGreyButton, .BiggerGreyButton, .BiggestGreyButton
+{
+	height:22px;
+	line-height:20px;
+	
+	font-size:13px;    
+	
+	margin:  4px;
+}
+
+/* Red and Blue Button Common Features */
+.BlueButton:active, .BigBlueButton:active, .BiggerBlueButton:active, .BiggestBlueButton:active, .SmallBlueButton:active
+.RedButton:active, .BigRedButton:active, .BiggerRedButton:active, .BiggestRedButton:active, .SmallRedButton:active{
+	position:relative;
+	bottom:1px;
+}
+
+/* Blue Button Specifics */
+
+.SmallBlueButton:hover, .BlueButton:hover, .BigBlueButton:hover, .BiggerBlueButton:hover, .BiggestBlueButton:hover{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6) );
+	background:-moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');
+	background-color:#1e62d0;
+	color:#ffffff;
+	text-decoration:none;
+}
+
+.SmallBlueButton, .BlueButton, .BigBlueButton, .BiggerBlueButton, .BiggestBlueButton{
+    -moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0) );
+	background:-moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
+	background-color:#3d94f6;
+	border:1px solid #84bbf3;
+}
+
+/* REd Button Specifics */
+
+.SmallRedButton, .RedButton, .BigRedButton, .BiggerRedButton, .BiggestRedButton, .RedButton3 {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	background-color:#f24537;
+	
+	border:1px solid #d02718;
+}
+
+.SmallRedButton:hover,.RedButton:hover, .BigRedButton:hover, .BiggerRedButton:hover, .BiggestRedButton:hover, .RedButton3:hover  {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+	background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+	background-color:#c62d1f;
+	
+	color:#ffffff;
+	text-decoration:none;
+}
+
+/* Grey Button Specifics */
+
+.SmallGrayButton,.GreyButton, .BigGreyButton, .BiggerGreyButton, .BiggestGreyButton
+{
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+
+	border:1px solid #dcdcdc;
+	
+	color:#777777;
+	
+	cursor: default;
+}
+
+.SmallGrayButton:hover,.GreyButton:hover, .BigGreyButton:hover, .BiggerGreyButton:hover, .BiggestGreyButton:hover
+{
+	color:#777777;
+    text-decoration: none;
+}
+
+/* Button Sizes */
+
+.SmallRedButton, .SmallGreyButton, .SmallBlueButton
+{
+    width: 50px;
+}
+
+.BlueButton, .RedButton, .GreyButton {
+    width:75px;
+}
+
+.BigBlueButton, .BigRedButton, .BigGreyButton
+{
+    width:115px;
+}
+
+.BiggerBlueButton, .BiggerRedButton, .BiggerGreyButton
+{
+    width:145px;
+}
+
+.RedButton3
+{
+    width:188px;
+}
+
+.BiggestBlueButton, .BiggestRedButton, .BiggestGreyButton
+{
+    width:300px;
+}

@@ -1,0 +1,81 @@
+﻿.IncomeSalaried  .colDetail        { display:none; }
+.IncomeSalaried  .colDetailAddress { display:table-cell; }
+.IncomeSalaried  .colType          { display:none; }
+.IncomeSalaried  .colTime          { display:table-cell; }
+.IncomeSalaried  .colDescription   { display:table-cell; }
+
+.IncomeSelfEmployment .colDetail        { display:table-cell; }
+.IncomeSelfEmployment .colDetailAddress { display:none; }
+.IncomeSelfEmployment .colType          { display:none; }
+.IncomeSelfEmployment .colTime          { display:table-cell; }
+.IncomeSelfEmployment .colDescription   { display:table-cell; }
+
+.IncomeRental    .colDetail        { display:table-cell; }
+.IncomeRental    .colDetailAddress { display:none; }
+.IncomeRental    .colType          { display:none; }
+.IncomeRental    .colTime          { display:none; }
+.IncomeRental    .colDescription   { display:none; }
+
+.IncomeInterest  .colDetail        { display:table-cell; }
+.IncomeInterest  .colDetailAddress { display:none; }
+.IncomeInterest  .colType          { display:none; }
+.IncomeInterest  .colTime          { display:none; }
+.IncomeInterest  .colDescription   { display:none; }
+
+.IncomeOther     .colDetail        { display:table-cell; }
+.IncomeOther     .colDetailAddress { display:none; }
+.IncomeOther     .colType          { display:none; }
+.IncomeOther     .colTime          { display:none; }
+.IncomeOther     .colDescription   { display:none; }
+
+.IncomeGift      .colDetail        { display:table-cell; }
+.IncomeGift      .colDetailAddress { display:none; }
+.IncomeGift      .colType          { display:none; }
+.IncomeGift      .colTime          { display:none; }
+.IncomeGift      .colDescription   { display:table-cell; }
+
+
+.InterestBusiness     .colType        { display:none; }
+.InterestBusiness     .colBusiness    { display:table-cell; }
+.InterestBusiness     .colManager     { display:none; }
+.InterestBusiness     .colAddress     { display:none; }
+.InterestBusiness     .colDescription { display:table-cell; }
+.InterestBusiness     .colPosition    { display:table-cell; }
+.InterestBusiness     .colPercent     { display:none; }
+
+.InterestRealProperty .colType        { display:none; }
+.InterestRealProperty .colBusiness    { display:none; }
+.InterestRealProperty .colManager     { display:none; }
+.InterestRealProperty .colAddress     { display:table-cell; }
+.InterestRealProperty .colDescription { display:table-cell; }
+.InterestRealProperty .colPosition    { display:none; }
+.InterestRealProperty .colPercent     { display:none; }
+
+.InterestAccount      .colType        { display:none; }
+.InterestAccount      .colBusiness    { display:none; }
+.InterestAccount      .colManager     { display:table-cell; }
+.InterestAccount      .colAddress     { display:none; }
+.InterestAccount      .colDescription { display:table-cell; }
+.InterestAccount      .colPosition    { display:table-cell; }
+.InterestAccount      .colPercent     { display:table-cell; }
+
+
+.LeaseGovernment      .colType   { display:none; }
+.LeaseGovernment      .colAgency { display:table-cell; }
+
+.LeaseNaturalResource .colType   { display:none; }
+.LeaseNaturalResource .colAgency { display:none; }
+
+
+/* Deprecated 12.22.2011 */
+.IncomeNonRetail .colDetail        { display:table-cell; }
+.IncomeNonRetail .colDetailAddress { display:none; }
+.IncomeNonRetail .colType          { display:none; }
+.IncomeNonRetail .colTime          { display:table-cell; }
+.IncomeNonRetail .colDescription   { display:table-cell; }
+
+.IncomeRetail    .colDetail        { display:table-cell; }
+.IncomeRetail    .colDetailAddress { display:none; }
+.IncomeRetail    .colType          { display:none; }
+.IncomeRetail    .colTime          { display:table-cell; }
+.IncomeRetail    .colDescription   { display:table-cell; }

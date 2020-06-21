@@ -1,0 +1,32 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- Copyright the Rubicon Project 2010 -->
+<title></title></head><body><script language="javascript">function setCookie(name,value,days){var expires;if(days){var date=new Date();date.setTime(date.getTime()+(days*24*60*60*1000));expires="; expires="+date.toGMTString();}
+else expires="";document.cookie=name+"="+escape(value)+expires+"; path=/";}
+function readCookie(name){var nameEQ=name+"=";var ca=document.cookie.split(';');for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)==' ')
+c=c.substring(1,c.length);if(c.indexOf(nameEQ)==0)
+return unescape(c.substring(nameEQ.length,c.length));}
+return null;}
+var partner_sync={ttl:14,sample:25,pixels:{"2100":{img:"http://dcrt.netseer.com/redirect?ex=11"},"1185":{iframe:"http://ad.turn.com/server/pixel.htm?fpid=6"},"1512":{img:"http://sync.mathtag.com/sync/img?mt_exid=9"},"1902":{img:"http://pixel.quantserve.com/pixel/p-e4m3Yko6bFYVc.gif?idmatch=0"},"1430":{img:"http://a.triggit.com/pxrucm"},"1994":{img:"http://map.media6degrees.com/orbserv/hbpix?pixId=4857"},"1197":{img:"http://user.lucidmedia.com/clicksense/user?p=9ce688505699aefa&r=1"},"fimserve":{img:"http://pixel.fimserve.com/fan.php"},"1986":{img:"http://ib.adnxs.com/getuidnb?http%3A%2F%2Fpixel.rubiconproject.com%2Ftap.php%3Fv%3D4894%26nid%3D1986%26put%3D$UID%26expires%3D30"},"w55c":{img:"http://w55c.net/m.gif?rurl=http%3A%2F%2Fpixel.rubiconproject.com%2Ftap.php%3Fv%3D4210%26nid%3D1523%26put%3D_wfivefivec_%26expires%3D10"}},notify:{"rubicon":{sample:100,img:"http://tap.rubiconproject.com/stats/rtbsync"}}};function shouldFirePixel(nid,info)
+{if(readCookie("pup_"+nid))
+return false;var sample=(info.sample==0)?info.sample:(info.sample||partner_sync.sample||0);if(!(Math.floor(Math.random()*100)<sample))
+return false;return true;}
+function firePixel(nid,info)
+{var days=(info.ttl||partner_sync.ttl||14);setCookie("pup_"+nid,new Date().getTime(),days);if(info.img)
+new Image().src=info.img;if(info.iframe)
+document.write("<iframe src='"+info.iframe+"' width='1' height='1' frameborder='0'></iframe>");}
+function shuffle(myArray)
+{var i=myArray.length;if(i==0)return false;while(--i)
+{var j=Math.floor(Math.random()*(i+1));var tempi=myArray[i];var tempj=myArray[j];myArray[i]=tempj;myArray[j]=tempi;}}
+function doPixels()
+{var allFired=true;var pixels=new Array();if(!document.cookie||(document.cookie.length<1))
+{setCookie("cd","false",365);return;}
+for(nid in partner_sync.pixels)
+{if(!readCookie("pup_"+nid))
+{pixels[pixels.length]=nid;}}
+allFired=(pixels.length==0);shuffle(pixels);for(var i in pixels)
+{var nid=pixels[i];var info=partner_sync.pixels[nid];if(shouldFirePixel(nid,info))
+{firePixel(nid,info);break;}}
+if(allFired)
+{var nid="rubicon";var info=partner_sync.notify[nid];if(shouldFirePixel(nid,info))
+{firePixel(nid,info);}}}
+doPixels();</script></body></html>

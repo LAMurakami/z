@@ -1,0 +1,252 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html version="-//W3C//DTD HTML 3.2 Final//EN">
+<head>
+<title>RFC 1521 Excerpt: Quoted-Printable Encoding</title>
+<style type="text/css">
+    DIV.bodycopy {
+        margin-left: 15%;
+        margin-right: 10%
+    }
+</style>
+<meta name="keywords" content="Quoted-Printable, RFC 1521, MIME">
+<meta name="description" content="RFC 1521 Excerpt: Quoted-Printable Encoding">
+<meta name="author" content="N. Borenstein, N. Freed">
+<meta name="robots" content="noindex">
+</head>
+<body bgcolor="#FFFFFF">
+
+<center>
+<table cols=2 width="65%">
+<tr>
+<td align=left>
+<font size="+1" face="Arial, Helvetica"><b>Network Working Group</b></font>
+<td align=right>
+<font size="+1" face="Arial, Helvetica"><b>N. Borenstein, Bellcore</b></font>
+<tr>
+<td align=left>
+<font size="+1" face="Arial, Helvetica"><b>Request for Comments: 1521</b></font>
+<td align=right>
+<font size="+1" face="Arial, Helvetica"><b>N. Freed, Innosoft</b></font>
+<tr>
+<td align=left>
+&nbsp;
+<td align=right>
+<font size="+1" face="Arial, Helvetica"><b>September 1993</b></font>
+<tr>
+<td colspan=2 align=center>
+<font size="+1" face="Arial, Helvetica"><b>
+MIME (Multipurpose Internet Mail Extensions) Part One:
+
+<p>
+Mechanisms for Specifying and Describing<br>
+the Format of Internet Message Bodies
+</b></font>
+</table>
+
+<p>
+
+<em>The following excerpt from RFC 1521 defines Quoted-Printable encoding.</em>
+
+</center>
+
+<div class="bodycopy">
+
+<h2>5.1.  Quoted-Printable Content-Transfer-Encoding</h2>
+
+   The Quoted-Printable encoding is intended to represent data
+   that largely consists of octets that correspond to printable
+   characters in the ASCII character set.  It encodes the data
+   in such a way that the resulting octets are unlikely to be
+   modified by mail transport.  If the data being encoded are
+   mostly ASCII text, the encoded form of the data remains
+   largely recognizable by humans.  A body which is entirely
+   ASCII may also be encoded in Quoted-Printable to ensure the
+   integrity of the data should the message pass through a
+   character-translating, and/or line-wrapping gateway.
+
+<p>
+
+   In this encoding, octets are to be represented as determined by the
+   following rules:
+
+<p>
+<blockquote>
+
+      <b>Rule #1:</b> (General 8-bit representation) Any octet, except those
+      indicating a line break according to the newline convention of the
+      canonical (standard) form of the data being encoded, may be
+      represented by an "=" followed by a two digit hexadecimal
+      representation of the octet's value.  The digits of the
+      hexadecimal alphabet, for this purpose, are "0123456789ABCDEF".
+      Uppercase letters must be used when sending hexadecimal data,
+      though a robust implementation may choose to recognize lowercase
+      letters on receipt.  Thus, for example, the value 12 (ASCII form
+      feed) can be represented by "=0C", and the value 61 (ASCII EQUAL
+      SIGN) can be represented by "=3D".  Except when the following
+      rules allow an alternative encoding, this rule is mandatory.
+
+<p>
+
+      <b>Rule #2:</b> (Literal representation) Octets with decimal values of 33
+      through 60 inclusive, and 62 through 126, inclusive, MAY be
+      represented as the ASCII characters which correspond to those
+      octets (EXCLAMATION POINT through LESS THAN, and GREATER THAN
+      through TILDE, respectively).
+
+<p>
+
+      <b>Rule #3</b> (White Space): Octets with values of 9 and 32 MAY be
+      represented as ASCII TAB (HT) and SPACE characters, respectively,
+      but MUST NOT be so represented at the end of an encoded line. Any
+      TAB (HT) or SPACE characters on an encoded line MUST thus be
+      followed on that line by a printable character.  In particular, an
+      "=" at the end of an encoded line, indicating a soft line break
+      (see rule #5) may follow one or more TAB (HT) or SPACE characters.
+      It follows that an octet with value 9 or 32 appearing at the end
+      of an encoded line must be represented according to Rule #1.  This
+      rule is necessary because some MTAs (Message Transport Agents,
+      programs which transport messages from one user to another, or
+      perform a part of such transfers) are known to pad lines of text
+      with SPACEs, and others are known to remove "white space"
+      characters from the end of a line.  Therefore, when decoding a
+      Quoted-Printable body, any trailing white space on a line must be
+      deleted, as it will necessarily have been added by intermediate
+      transport agents.
+
+<p>
+
+      <b>Rule #4</b> (Line Breaks): A line break in a text body, independent of
+      what its representation is following the canonical representation
+      of the data being encoded, must be represented by a (RFC 822) line
+      break, which is a CRLF sequence, in the Quoted-Printable encoding.
+      Since the canonical representation of types other than text do not
+      generally include the representation of line breaks, no hard line
+      breaks (i.e.  line breaks that are intended to be meaningful and
+      to be displayed to the user) should occur in the quoted-printable
+      encoding of such types.  Of course, occurrences of "=0D", "=0A",
+      "0A=0D" and "=0D=0A" will eventually be encountered.  In general,
+      however, base64 is preferred over quoted-printable for binary
+      data.
+
+<p>
+
+      Note that many implementations may elect to encode the local
+      representation of various content types directly, as described in
+      Appendix G.  In particular, this may apply to plain text material
+      on systems that use newline conventions other than CRLF
+      delimiters. Such an implementation is permissible, but the
+      generation of line breaks must be generalized to account for the
+      case where alternate representations of newline sequences are
+      used.
+
+<p>
+
+      <b>Rule #5</b> (Soft Line Breaks): The Quoted-Printable encoding REQUIRES
+      that encoded lines be no more than 76 characters long. If longer
+      lines are to be encoded with the Quoted-Printable encoding, 'soft'
+      line breaks must be used. An equal sign as the last character on a
+      encoded line indicates such a non-significant ('soft') line break
+      in the encoded text. Thus if the "raw" form of the line is a
+      single unencoded line that says:
+
+<p>
+<pre>
+          Now's the time for all folk to come to the aid of
+          their country.
+</pre>
+<p>
+
+      This can be represented, in the Quoted-Printable encoding, as
+
+<p>
+<pre>
+          Now's the time =
+          for all folk to come=
+           to the aid of their country.
+</pre>
+<p>
+
+      This provides a mechanism with which long lines are encoded in
+      such a way as to be restored by the user agent.  The 76 character
+      limit does not count the trailing CRLF, but counts all other
+      characters, including any equal signs.
+</blockquote>
+
+   Since the hyphen character ("-") is represented as itself in the
+   Quoted-Printable encoding, care must be taken, when encapsulating a
+   quoted-printable encoded body in a multipart entity, to ensure that
+   the encapsulation boundary does not appear anywhere in the encoded
+   body.  (A good strategy is to choose a boundary that includes a
+   character sequence such as "=_" which can never appear in a quoted-
+   printable body.  See the definition of multipart messages later in
+   this document.)
+
+<p>
+<blockquote>
+
+      NOTE: The quoted-printable encoding represents something of a
+      compromise between readability and reliability in transport.
+      Bodies encoded with the quoted-printable encoding will work
+      reliably over most mail gateways, but may not work perfectly over
+      a few gateways, notably those involving translation into EBCDIC.
+      (In theory, an EBCDIC gateway could decode a quoted-printable body
+      and re-encode it using base64, but such gateways do not yet
+      exist.)  A higher level of confidence is offered by the base64
+      Content-Transfer-Encoding.  A way to get reasonably reliable
+      transport through EBCDIC gateways is to also quote the ASCII
+      characters
+
+<blockquote>
+             <tt>!"#$@[\]^`{|}~</tt>
+</blockquote>
+
+<p>
+      according to rule #1.  See Appendix B for more information.
+</blockquote>
+
+   Because quoted-printable data is generally assumed to be
+   line-oriented, it is to be expected that the representation
+   of the breaks between the lines of quoted printable data may
+   be altered in transport, in the same manner that plain text
+   mail has always been altered in Internet mail when passing
+   between systems with differing newline conventions.  If such
+   alterations are likely to constitute a corruption of the
+   data, it is probably more sensible to use the base64 encoding
+   rather than the quoted-printable encoding.
+
+<p>
+
+   WARNING TO IMPLEMENTORS: If binary data are encoded in
+   quoted-printable, care must be taken to encode CR and LF
+   characters as "=0D" and "=0A", respectively.  In particular,
+   a CRLF sequence in binary data should be encoded as "=0D=0A".
+   Otherwise, if CRLF were represented as a hard line break, it
+   might be incorrectly decoded on platforms with different line
+   break conventions.
+
+<p>
+
+   For formalists, the syntax of quoted-printable data is described by
+   the following grammar:
+
+<p>
+   quoted-printable := ([*(ptext / SPACE / TAB) ptext] ["="] CRLF)<br>
+        ; Maximum line length of 76 characters excluding CRLF
+
+<p>
+   ptext := octet /&lt;any ASCII character except "=", SPACE, or TAB&gt;<br>
+        ; characters not listed as "mail-safe" in Appendix B<br>
+        ; are also not recommended.
+
+<p>
+   octet := "=" 2(DIGIT / "A" / "B" / "C" / "D" / "E" / "F")<br>
+        ; octet must be used for characters &lt; 127, =, SPACE, or TAB,<br>
+        ; and is recommended for any characters not listed in<br>
+        ; Appendix B as "mail-safe".
+
+</div>
+
+<h3><a href="./">Back to <cite>Qprint</cite></a></h3>
+
+</body>
+</html>

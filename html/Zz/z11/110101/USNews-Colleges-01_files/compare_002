@@ -1,0 +1,15 @@
+document.write('');
+
+var cb = Math.random();
+var d = document;
+var ref = "";
+try {
+    if ((window != top) && (window.parent == top)) {
+        ref = "&rf="+escape(d.referrer);
+    }
+} catch (ignore) { }
+d.write('<script language="JavaScript" type="text/javascript"');
+d.write('src="http://optimized-by.rubiconproject.com/a/7715/12318/25395-2.js?cb='+cb+ref+'">');
+d.write('<\/scr'+'ipt>');
+
+document.write('\n<noscript>\n<a href=\"http://optimized-by.rubiconproject.com/t/7715/12318/25395-2.1\"><img src=\"http://optimized-by.rubiconproject.com/a/7715/12318/25395-2.img\" width=\"728\" height=\"90\" border=\"0\"></a>\n</noscript>\n');

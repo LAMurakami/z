@@ -1,0 +1,25 @@
+<title>LAM Alaska simple pages</title>
+<!-- $Id: Simple-Pages.html,v 1.2 2018/06/30 06:39:54 ubuntu Exp ubuntu $ -->
+<center><h1>LAM Alaska simple pages</h1>
+</center>
+The site uses a Perl CGI program to act as what I
+ call a wrapper.  The program applies on the fly updates
+ to the raw html pages to add a common style and a bit
+ of dynamic content.  This is enabled within Apache by the
+ the following directive:
+<br><br><b>
+RewriteRule ^/(.+)\.html$ <a href="/Public/Scripts/menuBar.cgi-pl">
+/Public/Scripts/menuBar.cgi-pl</a> [QSA,PT,E=RewriteHtml:/$1.html]
+</b><br>
+<br>I have included a link to the program in the above that will display
+ the program description which will include a link to the program source.
+<br>
+<br>This page can be viewed in it's raw form at:
+<a href="/About/Simple-Pages.htm">
+/About/Simple-Pages.htm</a>
+or in it's form after the wrapper processing at:
+ <a href="/About/Simple-Pages.html">/About/Simple-Pages.html</a>
+<br>
+<br>To really appreciate the difference use the view source option
+ of your browser and compare the two source views generated with
+ different Apache directives from the same html file.

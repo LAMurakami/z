@@ -1,0 +1,224 @@
+<!-- $Id: index.html,v 1.4 2009/09/08 02:09:43 lam Exp lam $ -->
+<title>LAM Alaska Parallel Virtual Machine (PVM)</title>
+<center>
+<h1>LAM Alaska Parallel Virtual Machine (PVM)</h1>
+</center>
+<ul><li>pvm - Parallel Virtual Machine
+<li>pvm-examples - examples in c and fortran and a book in english
+<li>pvm-xpvm - Graphical console and monitor - including debugging and performance views
+<li>libpvm-devel - header files and static libraries</ul>
+The above four packages are available in Synaptic or apt-get on the PCLinuxOS platform.
+All are at the 3.4.5-6 version in the pclos2009 distribution.
+According to the PVM home page, version 3.4.6 is the latest.
+I will almost always wait for upgrades to make it into the official repositories
+ rather than doing a manual install.  Synaptic and apt-get are just easy.
+My experience tells me that if an upgrade is addressing a critical fix the
+ PCLinuxOS team won't take long to make it available.  This is most true for the
+ more polular packages.  I am not sure how popular the pvm package is on the
+ PCLinusOS platform.  I was happy to find it in the repositories.
+<br><br>
+MPI is optimized by the vendors of Massively Parallel Processor environments.
+PVM is available for separate PCs of different architectures.
+<br><br>
+Some usefull web links on other web servers:
+<br><br>
+
+<a href="http://www.csm.ornl.gov/pvm/">PVM (Parallel Virtual Machine)</a>
+ an alternate to MPI.
+ &nbsp; <a href="http://en.wikipedia.org/wiki/Parallel_Virtual_Machine">Wikipedia</a>
+ &nbsp; <a href="http://www.netlib.org/pvm3/faq_html/faq.html">
+ PVM - Frequently Asked Questions</a> &nbsp;
+ <a href="http://www.netlib.org/pvm3/book/pvm-book.html">pvm-book</a> &nbsp;
+<a href="http://carbon.cudenver.edu/csprojects/csc5809F99/class_projects/feng_chao_yu/full_project/index.htm">
+<nobr>Parallel Virtual Machine (PVM)</nobr></a> 
+<br><br>
+I installed pvm on all my machines and the additional pvm-examples, pvm-xpvm and libpvm-devel packages on q.
+ I got <a href="/man/pvm_intro">pvm_intro</a> &nbsp; <a href="/man/pvmd">pvmd</a> &nbsp;
+ <a href="/man/pvmd3">pvmd3</a> &nbsp; <a href="/man/pvm_shmd">pvm_shmd</a> &nbsp;
+ <a href="/man/PVM">PVM</a> man pages along with the main <a href="/man/pvm">pvm</a>
+  man page when the pvm package was installed.  The <a href="/man/tcsh">tcsh</a> package was a prerequisite
+  to the pvm package.  The <b>tcl</b> package was a prerequisite to the pvm-xpvm package.
+There were other prerequisites but they were already installed on my system.
+<br><br>
+The libpvm-devel package included the following man pages:
+<a href="/man/aimk">aimk</a>, &nbsp;
+<a href="/man/libfpvm">libfpvm</a>, &nbsp;
+<a href="/man/libpvm">libpvm</a>, &nbsp;
+<a href="/man/pvm_addhosts">pvm_addhosts</a>, &nbsp;
+<a href="/man/pvm_addmhf">pvm_addmhf</a>, &nbsp;
+<a href="/man/pvm_advise">pvm_advise</a>, &nbsp;
+<a href="/man/pvm_archcode">pvm_archcode</a>, &nbsp;
+<a href="/man/pvm_barrier">pvm_barrier</a>, &nbsp;
+<a href="/man/pvm_bcast">pvm_bcast</a>, &nbsp;
+<a href="/man/pvm_bufinfo">pvm_bufinfo</a>, &nbsp;
+<a href="/man/pvm_catchout">pvm_catchout</a>, &nbsp;
+<a href="/man/pvm_config">pvm_config</a>, &nbsp;
+<a href="/man/pvm_delete">pvm_delete</a>, &nbsp;
+<a href="/man/pvm_delhosts">pvm_delhosts</a>, &nbsp;
+<a href="/man/pvm_delinfo">pvm_delinfo</a>, &nbsp;
+<a href="/man/pvm_delmhf">pvm_delmhf</a>, &nbsp;
+<a href="/man/pvm_exit">pvm_exit</a>, &nbsp;
+<a href="/man/pvm_export">pvm_export</a>, &nbsp;
+<a href="/man/pvm_freebuf">pvm_freebuf</a>, &nbsp;
+<a href="/man/pvm_freecontext">pvm_freecontext</a>, &nbsp;
+<a href="/man/pvm_freezegroup">pvm_freezegroup</a>, &nbsp;
+<a href="/man/pvm_gather">pvm_gather</a>, &nbsp;
+<a href="/man/pvm_getcontext">pvm_getcontext</a>, &nbsp;
+<a href="/man/pvm_getfds">pvm_getfds</a>, &nbsp;
+<a href="/man/pvm_getinst">pvm_getinst</a>, &nbsp;
+<a href="/man/pvm_getmboxinfo">pvm_getmboxinfo</a>, &nbsp;
+<a href="/man/pvm_getmwid">pvm_getmwid</a>, &nbsp;
+<a href="/man/pvm_getopt">pvm_getopt</a>, &nbsp;
+<a href="/man/pvm_getrbuf">pvm_getrbuf</a>, &nbsp;
+<a href="/man/pvm_getsbuf">pvm_getsbuf</a>, &nbsp;
+<a href="/man/pvm_gettid">pvm_gettid</a>, &nbsp;
+<a href="/man/pvm_gettmask">pvm_gettmask</a>, &nbsp;
+<a href="/man/pvm_gsize">pvm_gsize</a>, &nbsp;
+<a href="/man/pvm_halt">pvm_halt</a>, &nbsp;
+<a href="/man/pvm_hostsync">pvm_hostsync</a>, &nbsp;
+<a href="/man/pvm_initsend">pvm_initsend</a>, &nbsp;
+<a href="/man/pvm_insert">pvm_insert</a>, &nbsp;
+<a href="/man/pvm_joingroup">pvm_joingroup</a>, &nbsp;
+<a href="/man/pvm_kill">pvm_kill</a>, &nbsp;
+<a href="/man/pvm_lookup">pvm_lookup</a>, &nbsp;
+<a href="/man/pvm_lvgroup">pvm_lvgroup</a>, &nbsp;
+<a href="/man/pvm_mcast">pvm_mcast</a>, &nbsp;
+<a href="/man/pvm_mkbuf">pvm_mkbuf</a>, &nbsp;
+<a href="/man/pvm_mstat">pvm_mstat</a>, &nbsp;
+<a href="/man/pvm_mytid">pvm_mytid</a>, &nbsp;
+<a href="/man/pvm_newcontext">pvm_newcontext</a>, &nbsp;
+<a href="/man/pvm_notify">pvm_notify</a>, &nbsp;
+<a href="/man/pvm_nrecv">pvm_nrecv</a>, &nbsp;
+<a href="/man/pvm_pack">pvm_pack</a>, &nbsp;
+<a href="/man/pvm_packf">pvm_packf</a>, &nbsp;
+<a href="/man/pvm_parent">pvm_parent</a>, &nbsp;
+<a href="/man/pvm_perror">pvm_perror</a>, &nbsp;
+<a href="/man/pvm_pkbyte">pvm_pkbyte</a>, &nbsp;
+<a href="/man/pvm_pkcplx">pvm_pkcplx</a>, &nbsp;
+<a href="/man/pvm_pkdcplx">pvm_pkdcplx</a>, &nbsp;
+<a href="/man/pvm_pkdouble">pvm_pkdouble</a>, &nbsp;
+<a href="/man/pvm_pkfloat">pvm_pkfloat</a>, &nbsp;
+<a href="/man/pvm_pkint">pvm_pkint</a>, &nbsp;
+<a href="/man/pvm_pklong">pvm_pklong</a>, &nbsp;
+<a href="/man/pvm_pkmesg">pvm_pkmesg</a>, &nbsp;
+<a href="/man/pvm_pkmesgbody">pvm_pkmesgbody</a>, &nbsp;
+<a href="/man/pvm_pkshort">pvm_pkshort</a>, &nbsp;
+<a href="/man/pvm_pkstr">pvm_pkstr</a>, &nbsp;
+<a href="/man/pvm_pkuint">pvm_pkuint</a>, &nbsp;
+<a href="/man/pvm_pkulong">pvm_pkulong</a>, &nbsp;
+<a href="/man/pvm_pkushort">pvm_pkushort</a>, &nbsp;
+<a href="/man/pvm_precv">pvm_precv</a>, &nbsp;
+<a href="/man/pvm_probe">pvm_probe</a>, &nbsp;
+<a href="/man/pvm_psend">pvm_psend</a>, &nbsp;
+<a href="/man/pvm_pstat">pvm_pstat</a>, &nbsp;
+<a href="/man/pvm_putinfo">pvm_putinfo</a>, &nbsp;
+<a href="/man/pvm_recv">pvm_recv</a>, &nbsp;
+<a href="/man/pvm_recvf">pvm_recvf</a>, &nbsp;
+<a href="/man/pvm_recvinfo">pvm_recvinfo</a>, &nbsp;
+<a href="/man/pvm_reduce">pvm_reduce</a>, &nbsp;
+<a href="/man/pvm_reg_hoster">pvm_reg_hoster</a>, &nbsp;
+<a href="/man/pvm_reg_rm">pvm_reg_rm</a>, &nbsp;
+<a href="/man/pvm_reg_tasker">pvm_reg_tasker</a>, &nbsp;
+<a href="/man/pvm_scatter">pvm_scatter</a>, &nbsp;
+<a href="/man/pvm_send">pvm_send</a>, &nbsp;
+<a href="/man/pvm_sendsig">pvm_sendsig</a>, &nbsp;
+<a href="/man/pvm_serror">pvm_serror</a>, &nbsp;
+<a href="/man/pvm_setcontext">pvm_setcontext</a>, &nbsp;
+<a href="/man/pvm_setmwid">pvm_setmwid</a>, &nbsp;
+<a href="/man/pvm_setopt">pvm_setopt</a>, &nbsp;
+<a href="/man/pvm_setrbuf">pvm_setrbuf</a>, &nbsp;
+<a href="/man/pvm_setsbuf">pvm_setsbuf</a>, &nbsp;
+<a href="/man/pvm_settmask">pvm_settmask</a>, &nbsp;
+<a href="/man/pvm_siblings">pvm_siblings</a>, &nbsp;
+<a href="/man/pvm_spawn">pvm_spawn</a>, &nbsp;
+<a href="/man/pvm_start_pvmd">pvm_start_pvmd</a>, &nbsp;
+<a href="/man/pvm_tasks">pvm_tasks</a>, &nbsp;
+<a href="/man/pvm_tidtohost">pvm_tidtohost</a>, &nbsp;
+<a href="/man/pvm_trecv">pvm_trecv</a>, &nbsp;
+<a href="/man/pvm_unexport">pvm_unexport</a>, &nbsp;
+<a href="/man/pvm_unpack">pvm_unpack</a>, &nbsp;
+<a href="/man/pvm_unpackf">pvm_unpackf</a>, &nbsp;
+<a href="/man/pvm_upkbyte">pvm_upkbyte</a>, &nbsp;
+<a href="/man/pvm_upkcplx">pvm_upkcplx</a>, &nbsp;
+<a href="/man/pvm_upkdcplx">pvm_upkdcplx</a>, &nbsp;
+<a href="/man/pvm_upkdouble">pvm_upkdouble</a>, &nbsp;
+<a href="/man/pvm_upkfloat">pvm_upkfloat</a>, &nbsp;
+<a href="/man/pvm_upkint">pvm_upkint</a>, &nbsp;
+<a href="/man/pvm_upklong">pvm_upklong</a>, &nbsp;
+<a href="/man/pvm_upkmesg">pvm_upkmesg</a>, &nbsp;
+<a href="/man/pvm_upkshort">pvm_upkshort</a>, &nbsp;
+<a href="/man/pvm_upkstr">pvm_upkstr</a>, &nbsp;
+<a href="/man/pvm_upkuint">pvm_upkuint</a>, &nbsp;
+<a href="/man/pvm_upkulong">pvm_upkulong</a>, &nbsp;
+<a href="/man/pvm_upkushort">pvm_upkushort</a>, &nbsp;
+<a href="/man/pvmfaddhost">pvmfaddhost</a>, &nbsp;
+<a href="/man/pvmfaddmhf">pvmfaddmhf</a>, &nbsp;
+<a href="/man/pvmfadvise">pvmfadvise</a>, &nbsp;
+<a href="/man/pvmfarchcode">pvmfarchcode</a>, &nbsp;
+<a href="/man/pvmfbarrier">pvmfbarrier</a>, &nbsp;
+<a href="/man/pvmfbcast">pvmfbcast</a>, &nbsp;
+<a href="/man/pvmfbufinfo">pvmfbufinfo</a>, &nbsp;
+<a href="/man/pvmfcatchout">pvmfcatchout</a>, &nbsp;
+<a href="/man/pvmfconfig">pvmfconfig</a>, &nbsp;
+<a href="/man/pvmfdelhost">pvmfdelhost</a>, &nbsp;
+<a href="/man/pvmfdelinfo">pvmfdelinfo</a>, &nbsp;
+<a href="/man/pvmfdelmhf">pvmfdelmhf</a>, &nbsp;
+<a href="/man/pvmfexit">pvmfexit</a>, &nbsp;
+<a href="/man/pvmffreebuf">pvmffreebuf</a>, &nbsp;
+<a href="/man/pvmffreecontext">pvmffreecontext</a>, &nbsp;
+<a href="/man/pvmffrzgrp">pvmffrzgrp</a>, &nbsp;
+<a href="/man/pvmfgather">pvmfgather</a>, &nbsp;
+<a href="/man/pvmfgetcontext">pvmfgetcontext</a>, &nbsp;
+<a href="/man/pvmfgetinst">pvmfgetinst</a>, &nbsp;
+<a href="/man/pvmfgetmboxinfo">pvmfgetmboxinfo</a>, &nbsp;
+<a href="/man/pvmfgetopt">pvmfgetopt</a>, &nbsp;
+<a href="/man/pvmfgetrbuf">pvmfgetrbuf</a>, &nbsp;
+<a href="/man/pvmfgetsbuf">pvmfgetsbuf</a>, &nbsp;
+<a href="/man/pvmfgettid">pvmfgettid</a>, &nbsp;
+<a href="/man/pvmfgsize">pvmfgsize</a>, &nbsp;
+<a href="/man/pvmfhalt">pvmfhalt</a>, &nbsp;
+<a href="/man/pvmfhostsync">pvmfhostsync</a>, &nbsp;
+<a href="/man/pvmfinitsend">pvmfinitsend</a>, &nbsp;
+<a href="/man/pvmfjoingrp">pvmfjoingrp</a>, &nbsp;
+<a href="/man/pvmfkill">pvmfkill</a>, &nbsp;
+<a href="/man/pvmflvgrp">pvmflvgrp</a>, &nbsp;
+<a href="/man/pvmfmcast">pvmfmcast</a>, &nbsp;
+<a href="/man/pvmfmkbuf">pvmfmkbuf</a>, &nbsp;
+<a href="/man/pvmfmstat">pvmfmstat</a>, &nbsp;
+<a href="/man/pvmfmytid">pvmfmytid</a>, &nbsp;
+<a href="/man/pvmfnewcontext">pvmfnewcontext</a>, &nbsp;
+<a href="/man/pvmfnotify">pvmfnotify</a>, &nbsp;
+<a href="/man/pvmfnrecv">pvmfnrecv</a>, &nbsp;
+<a href="/man/pvmfpack">pvmfpack</a>, &nbsp;
+<a href="/man/pvmfparent">pvmfparent</a>, &nbsp;
+<a href="/man/pvmfperror">pvmfperror</a>, &nbsp;
+<a href="/man/pvmfpkmesg">pvmfpkmesg</a>, &nbsp;
+<a href="/man/pvmfpkmesgbody">pvmfpkmesgbody</a>, &nbsp;
+<a href="/man/pvmfprecv">pvmfprecv</a>, &nbsp;
+<a href="/man/pvmfprobe">pvmfprobe</a>, &nbsp;
+<a href="/man/pvmfpsend">pvmfpsend</a>, &nbsp;
+<a href="/man/pvmfpstat">pvmfpstat</a>, &nbsp;
+<a href="/man/pvmfputinfo">pvmfputinfo</a>, &nbsp;
+<a href="/man/pvmfrecv">pvmfrecv</a>, &nbsp;
+<a href="/man/pvmfrecvinfo">pvmfrecvinfo</a>, &nbsp;
+<a href="/man/pvmfreduce">pvmfreduce</a>, &nbsp;
+<a href="/man/pvmfscatter">pvmfscatter</a>, &nbsp;
+<a href="/man/pvmfsend">pvmfsend</a>, &nbsp;
+<a href="/man/pvmfsendsig">pvmfsendsig</a>, &nbsp;
+<a href="/man/pvmfserror">pvmfserror</a>, &nbsp;
+<a href="/man/pvmfsetcontext">pvmfsetcontext</a>, &nbsp;
+<a href="/man/pvmfsetopt">pvmfsetopt</a>, &nbsp;
+<a href="/man/pvmfsetrbuf">pvmfsetrbuf</a>, &nbsp;
+<a href="/man/pvmfsetsbuf">pvmfsetsbuf</a>, &nbsp;
+<a href="/man/pvmfsiblings">pvmfsiblings</a>, &nbsp;
+<a href="/man/pvmfspawn">pvmfspawn</a>, &nbsp;
+<a href="/man/pvmfstartpvmd">pvmfstartpvmd</a>, &nbsp;
+<a href="/man/pvmftasks">pvmftasks</a>, &nbsp;
+<a href="/man/pvmftidtoh">pvmftidtoh</a>, &nbsp;
+<a href="/man/pvmftrecv">pvmftrecv</a>, &nbsp;
+<a href="/man/pvmfunpack">pvmfunpack</a>, &nbsp;
+<a href="/man/pvmfupkmesg">pvmfupkmesg</a>
+<br><br>
+The libpvm-devel package man pages document the function calls
+available from c and fortran to developers of programs that
+are to run in the Parallel Virtual Machine (PVM) environment.

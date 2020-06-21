@@ -1,0 +1,71 @@
+<title>Pages from my Archives made public.</title>
+
+<center><h1><a href="http://q.lam1.us/About/Public">
+
+                                 Pages from my Archives made public.
+</a></h1></center>
+
+<a href="http://z.lam1.us/About/Public">
+http://z.lam1.us/About/Public</a>
+- on an usecured site without a main page allowing directory browsing
+
+<br>
+<a href="http://cabo.lam1.us/About/Public">
+http://cabo.lam1.us/About/Public</a>
+- on an usecured site with a main page but directory browsing enabled
+
+<br>
+<a href="https://q.lam1.us/About/Public">
+https://q.lam1.us/About/Public</a>
+- on an secured site with a main page but directory browsing enabled
+
+<br><br>
+Within the content of this site, <b>public refers to URLs
+ available without authentication</b> and private refers to URLs
+ only available from the secure virtual host to
+ an authenticated user. A public URL may be available on either a
+ unsecured (http://) or secured (https://) site or both.
+<br><br><b>
+The bulk of content on my site is private and thus only
+ available from the secure virtual host to
+ an authenticated user.</b>  Most of the private usage on my site is
+ from a single user and that user is myself.  Some family members and
+ friends have been given credentials for access including
+ my brother for whom I host his public website and a friend
+ who has local access to my machines including the main server.
+<br><br>
+The public structure I created at z.lam1.us is also available at cabo.lam1.us
+ via symbolic links created in my Cabo folder such as:
+<br><br>
+ln -s ../z/Zz
+<br>
+ln -s ../z/About
+<br><br>
+The public structure I created at z.lam1.us may also be available via symbolic links created in the root folder of my secure site such as:
+<br><br>
+ln -s Public/Content/z/About
+<br><br>
+All my public sites are in my /Public/Content folder
+ which is an alias across sites.
+<br><br>
+The Zz public structure I created in the z folder of the
+ z.lam1.us site is a subset of what I provide access
+ to on the secure site with an private alias to within the mount
+ of the TeraStation RAID Network Storage.
+<br><br>
+The subset of files is provided with symbolic links to
+ individual files or folders within the duplicate folder
+ structure under the Zz folder.  A link to a folder is
+ only used when all the items in the private
+<br><br>
+A site without a main page, with the proper Apache directive, can be browsed and with another Apache directive the symbolic links can be browsed as well.  Some of the index related Apache directives on my site are:
+
+<pre>&lt;Directory /&gt;
+&nbsp;  Options Indexes FollowSymLinks
+&lt;/Directory&gt;
+DirectoryIndex Index.cgi-pl index.html index.htm Default.htm default.htm index.xml
+IndexOptions FancyIndexing VersionSort NameWidth=* HTMLTable SuppressDescription
+IndexStyleSheet /Public/Style.css
+ReadmeName FOOTER.html
+HeaderName HEADER.html
+IndexIgnore .??* *~ *# HEADER* FOOTER* RCS CVS *,v *,t *lck</pre>

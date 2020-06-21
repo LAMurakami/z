@@ -1,0 +1,1 @@
+function openWin(strURL,strWindowname,intWidth,intHeight,intLeft,intTop){var strWindowOptions;strWindowOptions="left="+intLeft+",top="+intTop+",width="+intWidth+",height="+intHeight+",name="+strWindowname+",status=no,scrollbars=yes,resize=no,toolbar=no,menubar=no";winNew=window.open(strURL,strWindowname,strWindowOptions);winNew.focus()}

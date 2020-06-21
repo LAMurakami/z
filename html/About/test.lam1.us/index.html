@@ -1,0 +1,29 @@
+<title>z.LAM1.us</title>
+
+<center><h1>LAM Alaska Apache test site</h1>
+</center>
+<a href="http://test.LAM1.us/">        * http://test.LAM1.us  </a>
+ - A place to test Apache site directives.
+<center><h2>This site is one of the virtual hosts of my server.</h2>
+</center>
+Wednesday, February 4, 2009 @ 12:56:21 AM (Alaska Time)
+ - This site was created some time ago but the documentation page
+ was only created today.  It was originally created as a place to
+ test Apache site directives.  It has at times had various content
+ in it for test purposes.
+
+<br><br>Today I added a directive to map <a href="/About">/About</a>
+ to <a href="/About">/About/test.lam1.us</a> for the default
+ index.html document.  I am now using this rule	for most of the
+ sites on this machine with only the value of the RewriteHtml
+ environment variable being different for each site.  The exception
+ is the <a href="http://z.lam1.us/">z.lam1.us site</a> which allows
+ browsing of the /About folder.  I need to create an About About
+ page to document this.
+ <br><br>
+RewriteRule
+^/About/index.html$
+/Public/Scripts/menuBar.cgi-pl
+[QSA
+,PT
+,E=RewriteHtml:/About/test.lam1.us/index.html]

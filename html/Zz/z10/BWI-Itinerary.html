@@ -1,0 +1,817 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<title>Itinerary</title>
+	<!-- using popup.jsp decorator -->
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> 
+	<link rel="shortcut icon" href="https://a248.e.akamai.net/7/248/19260/v1/images.delta.com/delta/misc/favicon.ico">
+<!-- begin /shared/components/css/style.jsp -->
+<link rel="stylesheet" type="text/css" href="BWI-Itinerary_files/core_V_20100401014746.css">
+<link rel="stylesheet" type="text/css" href="BWI-Itinerary_files/main_V_20100405134107.css">
+<link rel="stylesheet" type="text/css" href="BWI-Itinerary_files/core_apps_V_20091228151515.css">
+<link rel="stylesheet" type="text/css" href="BWI-Itinerary_files/myitinerary_V_20100401014933.css">
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="https://images.delta.com/shared/edgecache/stitch/css/ie6_V_20100422031111.css"/>
+    
+
+	
+		<link rel="stylesheet" type="text/css" href="https://images.delta.com/shared/edgecache/stitch/css/myitinerary_ie_V_20100318130627.css"/>
+
+	
+
+<![endif]-->
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="https://images.delta.com/shared/edgecache/stitch/css/ie7_V_20100511122034.css"/>
+
+<![endif]-->
+<!-- mp_trans_add="JA"
+	<link rel="stylesheet" type="text/css" href="https://images.delta.com/shared/edgecache/stitch/css/ja_V_20091110114908.css"/>
+
+-->
+<!-- mp_trans_add="KO"
+	<link rel="stylesheet" type="text/css" href="https://images.delta.com/shared/edgecache/stitch/css/ko_V_20091110115009.css"/>
+
+-->
+<!-- mp_trans_add="ZH"
+	<link rel="stylesheet" type="text/css" href="https://images.delta.com/shared/edgecache/stitch/css/zh_V_20091110115054.css"/>
+
+-->
+<!-- mp_trans_add="ZT"
+	<link rel="stylesheet" type="text/css" href="https://images.delta.com/shared/edgecache/stitch/css/zt_V_20091110115758.css"/>
+
+-->
+<!-- end /shared/components/css/style.jsp -->
+<!-- begin globalScriptInclude.jsp -->
+<!-- begin /shared/components/apps/globalScriptInclude_coretags.jsp -->
+<script type="text/javascript" src="BWI-Itinerary_files/dwr_V_20091203144601.js"></script>
+<script type="text/javascript" src="BWI-Itinerary_files/core_V_20100513120619.js"></script>
+<script type="text/javascript" src="BWI-Itinerary_files/core_apps_V_20100420023901.js"></script>
+<script type="text/javascript" src="BWI-Itinerary_files/myitinerary_V_20100430154935.js"></script>
+<script type="text/javascript" src="BWI-Itinerary_files/tracking_V_20100405172925.js"></script>
+<script type="text/javascript" src="BWI-Itinerary_files/prod_s_code_V_20100406084145.js"></script>
+<!-- end /shared/components/apps/globalScriptInclude_coretags.jsp -->
+<script type="text/javascript">
+		
+			try {
+				UserTracking.setLoyaltyId("Not a SkyMiles number");
+				UserTracking.memberType = "null";
+				UserTracking.milesBucket = "null";
+			} catch (error) {}
+		
+		try {
+			BrowserLanguageSettings.init("en-us,en;q=0.5");
+		} catch(e) {}
+	</script>
+
+<!-- end globalScriptInclude.jsp -->
+<!-- begin /shared/components/css/style.jsp -->
+<link rel="stylesheet" type="text/css" href="BWI-Itinerary_files/core_V_20100401014746.css">
+<link rel="stylesheet" type="text/css" href="BWI-Itinerary_files/main_V_20100405134107.css">
+<link rel="stylesheet" type="text/css" href="BWI-Itinerary_files/core_apps_V_20091228151515.css">
+<link rel="stylesheet" type="text/css" href="BWI-Itinerary_files/myitinerary_V_20100401014933.css">
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="https://images.delta.com/shared/edgecache/stitch/css/ie6_V_20100422031111.css"/>
+    
+
+	
+		<link rel="stylesheet" type="text/css" href="https://images.delta.com/shared/edgecache/stitch/css/myitinerary_ie_V_20100318130627.css"/>
+
+	
+
+<![endif]-->
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="https://images.delta.com/shared/edgecache/stitch/css/ie7_V_20100511122034.css"/>
+
+<![endif]-->
+<!-- mp_trans_add="JA"
+	<link rel="stylesheet" type="text/css" href="https://images.delta.com/shared/edgecache/stitch/css/ja_V_20091110114908.css"/>
+
+-->
+<!-- mp_trans_add="KO"
+	<link rel="stylesheet" type="text/css" href="https://images.delta.com/shared/edgecache/stitch/css/ko_V_20091110115009.css"/>
+
+-->
+<!-- mp_trans_add="ZH"
+	<link rel="stylesheet" type="text/css" href="https://images.delta.com/shared/edgecache/stitch/css/zh_V_20091110115054.css"/>
+
+-->
+<!-- mp_trans_add="ZT"
+	<link rel="stylesheet" type="text/css" href="https://images.delta.com/shared/edgecache/stitch/css/zt_V_20091110115758.css"/>
+
+-->
+<!-- end /shared/components/css/style.jsp -->
+<style>
+		div.popContainer {
+			display:block;
+			width:auto;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		table#itineraryTable {
+			width: 100%;
+		}
+	</style>
+	
+<!-- begin globalScriptInclude.jsp -->
+<!-- begin /shared/components/apps/globalScriptInclude_coretags.jsp -->
+<script type="text/javascript" src="BWI-Itinerary_files/dwr_V_20091203144601.js"></script>
+<script type="text/javascript" src="BWI-Itinerary_files/core_V_20100513120619.js"></script>
+<script type="text/javascript" src="BWI-Itinerary_files/core_apps_V_20100420023901.js"></script>
+<script type="text/javascript" src="BWI-Itinerary_files/myitinerary_V_20100430154935.js"></script>
+<script type="text/javascript" src="BWI-Itinerary_files/tracking_V_20100405172925.js"></script>
+<script type="text/javascript" src="BWI-Itinerary_files/prod_s_code_V_20100406084145.js"></script>
+<!-- end /shared/components/apps/globalScriptInclude_coretags.jsp -->
+<script type="text/javascript">
+		
+			try {
+				UserTracking.setLoyaltyId("Not a SkyMiles number");
+				UserTracking.memberType = "null";
+				UserTracking.milesBucket = "null";
+			} catch (error) {}
+		
+		try {
+			BrowserLanguageSettings.init("en-us,en;q=0.5");
+		} catch(e) {}
+</script>
+<!-- end globalScriptInclude.jsp -->
+</head><body class="popupwin popupwin" onload="window.focus();">
+<a name="top"></a>
+<!-- begin globalScriptInclude.jsp -->
+<!-- begin /shared/components/apps/globalScriptInclude_coretags.jsp -->
+<script type="text/javascript" src="BWI-Itinerary_files/dwr_V_20091203144601.js"></script>
+<script type="text/javascript" src="BWI-Itinerary_files/core_V_20100513120619.js"></script>
+<script type="text/javascript" src="BWI-Itinerary_files/core_apps_V_20100420023901.js"></script>
+<script type="text/javascript" src="BWI-Itinerary_files/myitinerary_V_20100430154935.js"></script>
+<script type="text/javascript" src="BWI-Itinerary_files/tracking_V_20100405172925.js"></script>
+<script type="text/javascript" src="BWI-Itinerary_files/prod_s_code_V_20100406084145.js"></script>
+<!-- end /shared/components/apps/globalScriptInclude_coretags.jsp -->
+<script type="text/javascript">
+		
+			try {
+				UserTracking.setLoyaltyId("Not a SkyMiles number");
+				UserTracking.memberType = "null";
+				UserTracking.milesBucket = "null";
+			} catch (error) {}
+		
+		try {
+			BrowserLanguageSettings.init("en-us,en;q=0.5");
+		} catch(e) {}
+</script>
+<!-- end globalScriptInclude.jsp -->
+<div id="popHeader">
+  <table border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td class="left"><img src="BWI-Itinerary_files/popup_header_left.jpg" alt="Delta" title="Delta"></td>
+    </tr>
+  </tbody></table>
+</div>
+<div class="popContainer">
+	<h2>Itinerary</h2>
+<div class="imageNav">
+	<a href="javascript:self.print();"><img class="right" src="BWI-Itinerary_files/print_S.gif" alt="PRINT" title="PRINT" border="0"></a>
+</div>
+<p>&nbsp;</p>
+
+<table id="itineraryTable">
+<thead>
+	<tr>
+		<th>Departs</th>
+		<th>&nbsp;</th>
+		<th>&nbsp;</th>
+		<th>Arrives</th>
+		<th>&nbsp;</th>
+		<th>Cabin &amp; Class</th>
+		<th>Flight Segment Status</th>
+<th>Travel Time</th>
+		
+	</tr>
+</thead>
+<tbody>
+<!-- First flight information -->
+	<tr class="even">
+            <!-- Carrier Fligh Number -->
+            <td>
+   	    
+            Delta<nobr>&nbsp;1244
+		
+		</nobr><br>
+	    </td>
+            <!-- Departs -->
+
+            <td>
+<!-- mp_trans_disable_start -->
+               Fairbanks, AK&nbsp;(FAI)
+		<br>
+<!-- mp_trans_disable_end -->
+		Gate: N/A<br>
+	    </td>
+
+	    <!-- Departs/time & date -->
+	    <td>
+            
+		  
+                  9:40pm<br>
+		  
+                  5 Jun 2010
+            
+	    </td>
+	  <!-- Arrives -->
+            <td>
+<!-- mp_trans_disable_start -->
+               Minneapolis/St Paul, MN&nbsp;(MSP) <br>
+<!-- mp_trans_disable_end -->
+		Gate: N/A
+		</td>
+               <!--Arrives/time & date -->
+               <td>
+	       
+                      5:59am<br>
+                      6 Jun 2010
+	       
+               </td>
+
+               <!-- Cabin & Class -->
+               <td>
+		
+		
+			  Coach (T)
+		
+		
+               </td>
+
+
+	       <!-- Flight Segment Status -->
+		<td>
+		  
+                        Confirmed
+		  
+                </td>
+
+	     <!-- Upgrade Status -->
+      <!-- Bing Shui 7/12/2003 change: Add condition -->
+           
+<td rowspan="2">9 hrs 5 mins</td>
+	</tr>
+
+
+
+   
+
+
+<!-- First flight information -->
+	<tr class="odd">
+            <!-- Carrier Fligh Number -->
+            <td>
+   	    
+            Delta<nobr>&nbsp;2900
+		
+		</nobr><br>
+	    </td>
+            <!-- Departs -->
+
+            <td>
+<!-- mp_trans_disable_start -->
+               Minneapolis/St Paul, MN&nbsp;(MSP)
+		<br>
+<!-- mp_trans_disable_end -->
+		Gate: N/A<br>
+	    </td>
+
+	    <!-- Departs/time & date -->
+	    <td>
+            
+		  
+                  7:15am<br>
+		  
+                  6 Jun 2010
+            
+	    </td>
+	  <!-- Arrives -->
+            <td>
+<!-- mp_trans_disable_start -->
+               Baltimore, MD&nbsp;(BWI) <br>
+<!-- mp_trans_disable_end -->
+		Gate: N/A
+		</td>
+               <!--Arrives/time & date -->
+               <td>
+	       
+                      10:45am<br>
+                      6 Jun 2010
+	       
+               </td>
+
+               <!-- Cabin & Class -->
+               <td>
+		
+		
+			  Coach (T)
+		
+		
+               </td>
+
+
+	       <!-- Flight Segment Status -->
+		<td>
+		  
+                        Confirmed
+		  
+                </td>
+
+	     <!-- Upgrade Status -->
+      <!-- Bing Shui 7/12/2003 change: Add condition -->
+           
+
+	</tr>
+
+
+
+   
+
+
+<!-- First flight information -->
+	<tr class="even">
+            <!-- Carrier Fligh Number -->
+            <td>
+   	    
+            United Air Lines Inc<nobr>&nbsp;575
+		
+		</nobr><br>
+	    </td>
+            <!-- Departs -->
+
+            <td>
+<!-- mp_trans_disable_start -->
+               Baltimore, MD&nbsp;(BWI)
+		<br>
+<!-- mp_trans_disable_end -->
+		Gate: N/A<br>
+	    </td>
+
+	    <!-- Departs/time & date -->
+	    <td>
+            
+		  
+                  12:12pm<br>
+		  
+                  13 Jun 2010
+            
+	    </td>
+	  <!-- Arrives -->
+            <td>
+<!-- mp_trans_disable_start -->
+               Chicago-Ohare, IL&nbsp;(ORD) <br>
+<!-- mp_trans_disable_end -->
+		Gate: N/A
+		</td>
+               <!--Arrives/time & date -->
+               <td>
+	       
+                      1:13pm<br>
+                      13 Jun 2010
+	       
+               </td>
+
+               <!-- Cabin & Class -->
+               <td>
+		
+		
+                  	(W)
+		
+		
+               </td>
+
+
+	       <!-- Flight Segment Status -->
+		<td>
+		  
+                        Confirmed
+		  
+                </td>
+
+	     <!-- Upgrade Status -->
+      <!-- Bing Shui 7/12/2003 change: Add condition -->
+           
+<td>2 hrs 1 min</td>
+	</tr>
+
+
+
+   
+
+
+<!-- First flight information -->
+	<tr class="odd">
+            <!-- Carrier Fligh Number -->
+            <td>
+   	    
+            Delta<nobr>&nbsp;1832
+		
+		</nobr><br>
+	    </td>
+            <!-- Departs -->
+
+            <td>
+<!-- mp_trans_disable_start -->
+               Chicago-Ohare, IL&nbsp;(ORD)
+		<br>
+<!-- mp_trans_disable_end -->
+		Gate: N/A<br>
+	    </td>
+
+	    <!-- Departs/time & date -->
+	    <td>
+            
+		  
+                  3:02pm<br>
+		  
+                  18 Jun 2010
+            
+	    </td>
+	  <!-- Arrives -->
+            <td>
+<!-- mp_trans_disable_start -->
+               Minneapolis/St Paul, MN&nbsp;(MSP) <br>
+<!-- mp_trans_disable_end -->
+		Gate: N/A
+		</td>
+               <!--Arrives/time & date -->
+               <td>
+	       
+                      4:30pm<br>
+                      18 Jun 2010
+	       
+               </td>
+
+               <!-- Cabin & Class -->
+               <td>
+		
+		
+			  Coach (L)
+		
+		
+               </td>
+
+
+	       <!-- Flight Segment Status -->
+		<td>
+		  
+                        Confirmed
+		  
+                </td>
+
+	     <!-- Upgrade Status -->
+      <!-- Bing Shui 7/12/2003 change: Add condition -->
+<td rowspan="2">8 hrs 6 mins</td>
+           
+
+	</tr>
+
+
+
+   
+
+
+<!-- First flight information -->
+	<tr class="even">
+            <!-- Carrier Fligh Number -->
+            <td>
+   	    
+            Delta<nobr>&nbsp;2074
+		
+		</nobr><br>
+	    </td>
+            <!-- Departs -->
+
+            <td>
+<!-- mp_trans_disable_start -->
+               Minneapolis/St Paul, MN&nbsp;(MSP)
+		<br>
+<!-- mp_trans_disable_end -->
+		Gate: N/A<br>
+	    </td>
+
+	    <!-- Departs/time & date -->
+	    <td>
+            
+		  
+                  5:25pm<br>
+		  
+                  18 Jun 2010
+            
+	    </td>
+	  <!-- Arrives -->
+            <td>
+<!-- mp_trans_disable_start -->
+               Fairbanks, AK&nbsp;(FAI) <br>
+<!-- mp_trans_disable_end -->
+		Gate: N/A
+		</td>
+               <!--Arrives/time & date -->
+               <td>
+	       
+                      8:08pm<br>
+                      18 Jun 2010
+	       
+               </td>
+
+               <!-- Cabin & Class -->
+               <td>
+		
+		
+			  Coach (L)
+		
+		
+               </td>
+
+
+	       <!-- Flight Segment Status -->
+		<td>
+		  
+                        Confirmed
+		  
+                </td>
+
+	     <!-- Upgrade Status -->
+      <!-- Bing Shui 7/12/2003 change: Add condition -->
+           
+	</tr>
+
+
+
+    </tbody>
+	
+<!-- Table body ends -->
+
+<!-- Table footer starts -->
+<tfoot>
+
+<!-- footer table begins -->
+
+        <tr>
+            <td colspan="7" style="">
+		    
+			<span id="ticketPrice">Price: </span><span id="ticketTotal">N/A</span>
+		     
+			</td>
+<td>19 hrs 12 mins</td>						   
+		   </tr>
+</tfoot>
+  <!-- footer table ends -->
+
+</table>
+
+
+
+<!-- Begin Seating table -->
+
+
+
+
+
+<h3 style="margin: 10px 0px 0px;">Your Seating</h3>
+
+
+
+<!-- begin passenger table -->
+
+       <table id="itineraryTable" cellpadding="3" cellspacing="0" width="632">
+      
+<!-- table header starts-->                      
+      <thead>
+<tr>
+              <td colspan="5" class="grayRowTop" align="right"><img src="BWI-Itinerary_files/solid_rounded_righttop.gif"></td>
+        </tr>
+          <tr>
+              <td class="grayRowHeader" style="border-left: 1px solid rgb(216, 216, 216);" align="left" width="136px">Passenger</td>
+              <td class="grayRowHeader" width="130px">From</td>
+			  <td class="grayRowHeader" width="130px">To</td>
+			  <td class="grayRowHeader" align="left" width="80px">Seat<br>Assignment<div class="listDepartmentLinks">
+			  
+			  </div></td>
+              <td class="grayRowHeader" align="left" width="156px">Special Services or Meals<br>
+			  <span id="SSRnote" class="cpySmall" style="font-weight: 400;">(e.g. Wheelchair, Kosher...)</span></td>
+              
+</tr>
+      </thead>
+
+<!-- Table header ends -->
+
+<!-- Table body starts -->
+   <tbody>
+
+<!-- First flight information -->
+<tr class="tblContent1" valign="top">
+                <!-- Passenger -->
+<!-- mp_trans_disable_start -->
+         
+               <td rowspan="5" style="border-left: 1px solid rgb(216, 216, 216);" class="tableCell appBoxContent" align="left" valign="top">
+                   Lawrence Murakami<br>
+		   
+           Alaska  Airlines # 18347265
+<br>Mileage Plan
+			
+		<br>
+	      </td>
+	 
+                <!-- From -->
+			  
+               <td class="tableCell" align="left">
+	         
+        	 Fairbanks, AK (FAI)
+	         
+	       </td>
+
+	       <!-- To  -->
+	  <td class="tableCell" align="left">
+         
+	         Minneapolis/St Paul, MN (MSP)
+         
+	  </td>
+<!-- mp_trans_disable_end -->
+
+ 	<!-- Seat Assignment -->
+               <td class="tableCell" align="left">31F</td>
+               <!-- Special Services or Meals -->
+               <td class="tableCell" align="left">&nbsp;
+               <br>
+               
+</td>
+
+               
+</tr>
+
+<!-- end First flight information -->
+
+<!-- First flight information -->
+<tr class="tblContent2" valign="top">
+                <!-- Passenger -->
+<!-- mp_trans_disable_start -->
+         
+                <!-- From -->
+			  
+               <td class="tableCell" align="left">
+	         
+        	 Minneapolis/St Paul, MN (MSP)
+	         
+	       </td>
+
+	       <!-- To  -->
+	  <td class="tableCell" align="left">
+         
+	         Baltimore, MD (BWI)
+         
+	  </td>
+<!-- mp_trans_disable_end -->
+
+ 	<!-- Seat Assignment -->
+               <td class="tableCell" align="left">7F</td>
+               <!-- Special Services or Meals -->
+               <td class="tableCell" align="left">&nbsp;
+               <br>
+               
+</td>
+
+               
+</tr>
+
+<!-- end First flight information -->
+
+<!-- First flight information -->
+<tr class="tblContent1" valign="top">
+                <!-- Passenger -->
+<!-- mp_trans_disable_start -->
+         
+                <!-- From -->
+			  
+               <td class="tableCell" align="left">
+	         
+        	 Baltimore, MD (BWI)
+	         
+	       </td>
+
+	       <!-- To  -->
+	  <td class="tableCell" align="left">
+         
+	         Chicago-Ohare, IL (ORD)
+         
+	  </td>
+<!-- mp_trans_disable_end -->
+
+ 	<!-- Seat Assignment -->
+               <td class="tableCell" align="left">Not Assigned</td>
+               <!-- Special Services or Meals -->
+               <td class="tableCell" align="left">&nbsp;
+               <br>
+               
+</td>
+
+               
+</tr>
+
+<!-- end First flight information -->
+
+<!-- First flight information -->
+<tr class="tblContent2" valign="top">
+                <!-- Passenger -->
+<!-- mp_trans_disable_start -->
+         
+                <!-- From -->
+			  
+               <td class="tableCell" align="left">
+	         
+        	 Chicago-Ohare, IL (ORD)
+	         
+	       </td>
+
+	       <!-- To  -->
+	  <td class="tableCell" align="left">
+         
+	         Minneapolis/St Paul, MN (MSP)
+         
+	  </td>
+<!-- mp_trans_disable_end -->
+
+ 	<!-- Seat Assignment -->
+               <td class="tableCell" align="left">12F</td>
+               <!-- Special Services or Meals -->
+               <td class="tableCell" align="left">&nbsp;
+               <br>
+               
+</td>
+
+               
+</tr>
+
+<!-- end First flight information -->
+
+<!-- First flight information -->
+<tr class="tblContent1" valign="top">
+                <!-- Passenger -->
+<!-- mp_trans_disable_start -->
+         
+                <!-- From -->
+			  
+               <td class="tableCell" align="left">
+	         
+        	 Minneapolis/St Paul, MN (MSP)
+	         
+	       </td>
+
+	       <!-- To  -->
+	  <td class="tableCell" align="left">
+         
+	         Fairbanks, AK (FAI)
+         
+	  </td>
+<!-- mp_trans_disable_end -->
+
+ 	<!-- Seat Assignment -->
+               <td class="tableCell" align="left">37A</td>
+               <!-- Special Services or Meals -->
+               <td class="tableCell" align="left">&nbsp;
+               <br>
+               
+</td>
+
+               
+</tr>
+
+<!-- end First flight information -->
+
+
+    </tbody>
+	
+<!-- Table body ends -->
+
+<!-- Table footer starts -->
+<tfoot>
+
+<!-- footer table begins -->
+
+        <tr>
+            <td colspan="8" class="grayRowFooter cpySmall" style="text-align: left; font-weight: 400;">
+			           
+        </td></tr>
+
+        <tr>
+             <td colspan="8" class="grayRowBottom" align="right"><img src="BWI-Itinerary_files/solid_rounded_rightbottom.gif"></td>
+        </tr>
+</tfoot>
+  <!-- footer table ends -->
+
+</table>
+<br>
+<!-- end passenger table -->
+
+
+<!-- begin print button -->
+<div class="imageNav">
+	<a href="javascript:self.print();"><img class="right" src="BWI-Itinerary_files/print_S.gif" alt="PRINT" title="PRINT" border="0"></a>
+</div>
+
+
+<!-- end print button -->
+<!-- close left margin spacer div -->
+</div>
+
+</body></html>

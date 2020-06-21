@@ -1,0 +1,2662 @@
+/* ********** landing page layout and format classes ********** */
+/*** default table style ***/
+table thead tr th,
+table thead tr td,
+table tbody tr th,
+table tbody tr td,
+table tfoot tr td {
+	padding: 5px
+}
+table, 
+table caption,
+table thead tr th,
+table thead tr th *,
+table thead tr td,
+table thead tr td *,
+table tbody tr th,
+table tbody tr th *,
+table tbody tr td,
+table tbody tr td *,
+table tfoot tr td,
+table tfoot tr td * {
+	font-size: 11px;
+	font-family: Tahoma, Arial, sans-serif;
+}
+table thead tr th,
+table thead tr th *,
+table tbody tr th,
+table tbody tr th * 
+table thead tr th a,
+table thead tr td a,
+table tbody tr th a,
+table tbody tr td a {
+	font-weight: bold;
+}
+div.genContent table * {
+	padding:5px;
+}
+table.gray { 
+	margin:0px;
+	padding:0px;
+	margin-bottom:10px;
+	background-color:#f9f9f9; 
+}
+table.gray td { 
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+	padding-right:5px;
+	vertical-align:top; 
+}
+/*
+table.gray td.start { 
+	border-left:2px #ccc solid;
+	padding-left:15px;
+	text-align:left; 
+}
+table.gray td.end { 
+	border-right:2px #ccc solid;
+	padding-right:15px; 
+}
+*/
+table.gray td.bullet { 
+	font-size:large;
+	text-align:center;
+	vertical-align:middle; 
+}
+table.gray td.endbullet { 
+	font-size:large;
+	text-align:center;
+	vertical-align:middle;
+	border-right:2px #ccc solid; 
+}
+/*
+table.gray td.right { 
+	border-right-color:#ccc;
+}
+*/
+table.gray td.sub { 
+	border-top:none;
+	background-color:#e9e9e9;
+	text-align:center;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+table.gray td.clear { 
+	padding:0;
+	margin:0;
+	border-style:none;
+}
+table.gray tr.even { 
+	background-color:#eaeaea;
+}
+table.gray tr.odd { 
+	background-color:#fff;
+}
+table.gray caption { 
+	font-weight: bold;
+	text-align:left;
+	padding:5px 0 0 5px; 
+}
+/* table.gray b { font-size:14px;font-weight:bold; } */
+table.gray span.super { 
+	font-size:9px; 
+	vertical-align:20%; 
+}
+table.gray th { 
+	background:#ccc;
+	vertical-align:top;
+	text-align:center;
+	font-weight:bold;
+	padding:0 5px 0 5px; 
+}
+table.gray th.start { 
+	padding-left:17px; 
+}
+table.gray th.end { 
+	padding-right:17px; 
+}
+table.gray th.left { 
+	text-align:left; 
+}
+table.gray th.top { 
+	padding-bottom:10px; 
+}
+table.gray th.aboveSub { 
+	padding-bottom:3px; 
+}
+table.gray th.bottom { 
+	text-align:left;
+	padding-top:10px;
+	font:normal 10px Tahoma, Arial, sans-serif;
+}
+table.corners { 
+	display: none;
+}
+/*** offers table ***/
+table.striped {}
+table.striped td { 
+	padding:5px;
+	vertical-align:top; 
+}
+table.striped tr.even { 
+	background-color:#e6ebef; 
+}
+div.tableOffers { 
+	position:relative; 
+}
+div.tableOffers h2, 
+div.blueWhite h2 { 
+	clear:both;
+	height:25px;
+	width:478px;
+	margin:0;
+	padding:4px 0 0 10px !important;
+	background:#036 url(//images.delta.com/delta/backgrounds/tables/table_title.gif) no-repeat;
+	font:bold 13px Tahoma, Arial, sans-serif;
+	color:#fff; 
+}
+div.tableOffers>h2, 
+div.blueWhite>h2 { 
+	height:21px;
+	width:468px; 
+}
+div.tableOffers td.details { 
+	vertical-align:middle;
+	margin:0;
+	padding:0 0 0 16px; 
+}
+div.tableOffers td.details img { 
+	display:inline;
+	vertical-align:middle;
+	width:9px;
+	height:5px;
+	margin:0 2px 0 0; 
+}
+div.tableOffers img { 
+	display:block; 
+}
+div.tableOffers table { 
+	width:476px;
+	background:#fff url(//images.delta.com/delta/backgrounds/tables/table_body.gif);
+	margin:0;
+	padding:0; 
+}
+div.tableOffers table tr.even { 
+	background-color:#eaeaea;
+}
+div.tableOffers table td { 
+	width:134px;
+	vertical-align:top;
+	padding:0 10px 0 16px; 
+}
+div.tableOffers table td img { 
+	display:inline;
+	width:80px;
+	height:40px;
+	margin-bottom:3px; 
+}
+div.tableOffers span.linkMore { 
+	display:block;
+	float:right;
+	width:300px;
+	text-align:right;
+	margin:6px 8px 25px 0; 
+	padding:0; 
+	position:relative;
+}
+div.tableOffers span.linkTop { 
+	display:block;
+	width:130px;
+	margin:6px 8px 25px 0;
+	padding:0; 
+	position:relative;
+}
+span.linkTop img { 
+	display:inline;
+	width:11px;
+	height:8px;
+	margin:0 4px 0 0;
+	padding:0; 
+}
+span.linkMore img { 
+	display:inline;
+	width:15px;
+	height:7px;
+	margin:0 4px 0 0;
+	padding:0; 
+}
+div.blueWhite { 
+}
+div.blueWhite h2 { 
+	padding:4px 0 0 50px; 
+}
+div.blueWhite>h2 { 
+	padding:4px 0 0 10px; 
+}
+div.blueWhite img { 
+	display:block; 
+}
+div.blueWhite table { 
+	width:476px;
+	background:#fff url(//images.delta.com/delta/backgrounds/layout/blue_white_478_middle.jpg);
+	margin:0;
+	padding:0; 
+}
+div.blueWhite table td { 
+	vertical-align:top;
+	padding: 0 10px 0 10px; 
+}
+div.blueWhite table td img { 
+	display:block;
+	margin-bottom:3px; 
+}
+div.blueWhite span.linkTop { 
+	width:150px;
+	display:block;
+	margin:6px 0 0 0;
+	padding:0; 
+}
+div.blueWhite span.linkTop img { 
+	display:inline;
+	width:11px;
+	height:8px;
+	margin:0 4px 0 0;
+	padding:0; 
+}
+div.blueWhite ul { 
+	width:100%; 
+}
+.new { 
+	height:36px;
+	background-image: url('//images.delta.com/delta/icons/new.gif');
+	background-repeat: no-repeat; 
+}
+div.genContent table,
+div.popContainer table { 
+	clear:both;
+	width:100%;
+	border-collapse: collapse;
+	padding:3px;
+	border:#ccc 1px solid; 
+	margin-bottom: 10px;
+}
+div.genContent table caption,
+div.popContainer table caption { 
+	background:transparent;
+	text-align:left;
+	font-weight:bold; 
+	color:#036;
+	font-size:12px; 
+	margin-bottom: 10px;
+}
+div.genContent div#Feedback table {  
+	border-left:#ccc 0px solid; 
+} 
+div.genContent table thead tr th,
+div.popContainer tablethead tr th {
+	text-align:center;
+}
+div.genContent table thead th, 
+div.genContent table thead td,
+div.popContainer table thead th,
+div.popContainer table thead td { 
+	background:#ccc; 
+	font-weight:bold; 
+	border-right:#ccc 1px solid; 
+	vertical-align:top; 
+	padding: 5px;
+}	
+div.genContent table thead tr th.active,
+div.popContainer table thead tr th.active { 
+	background:#fff url(//images.delta.com/delta/backgrounds/tables/table_th_active_right.gif) no-repeat top right; 
+}
+div.genContent table thead tr th div { 
+	padding:3px 0 3px 0;
+}
+div.genContent table thead tr th.active div { 
+	background:transparent url(//images.delta.com/delta/backgrounds/tables/table_th_active_left.gif) no-repeat top left; 
+}
+div.genContent table thead tr th a {
+	font-weight:normal;
+	text-decoration:underline;
+}
+div.genContent table tbody tr.odd, 
+div.genContent table tbody tr.odd td,
+div.popContainer table tbody tr.odd,
+div.popContainer table tbody tr.odd td { 
+	background:#fff; 
+}
+div.genContent table tbody tr.even,
+div.genContent table tbody tr.even td,
+div.popContainer table tbody tr.even,
+div.popContainer table tbody tr.even td { 
+	background:#fff; 
+}
+div.genContent table tbody tr td,
+div.popContainer table tbody tr td { 
+	border-right:#ccc 1px solid; 
+	border-top:1px solid #d8d8d8;
+	padding: 5px
+}
+div.genContent table tbody tr th,
+div.popContainer table tbody tr th { 
+	text-align:middle;
+	background:#79c; 
+	color:#fff; 
+	font-weight:bold;
+}
+div.genContent table tfoot tr td,
+div.popContainer table tfoot tr td { 
+	background:#ccc;
+	font-size:10px; 
+}
+div.genContent table tfoot tr td div.notes,
+div.popContainer table tfoot td div.notes {
+	background:transparent;
+}
+div.genContent table tbody tr th a, 
+div.genContent table tbody tr th a:link, 
+div.genContent table tbody tr th a:visited, 
+div.genContent table tbody tr th a:hover {
+	font-weight:normal;
+	color:#fff;
+	text-decoration:underline;
+}
+div.genContent table.cleanTable { 
+	clear:both;
+	border-collapse: collapse;
+	border:#ccc 1px solid; 
+	margin-bottom: 10px;
+	margin-left:1px;
+	margin-right:1px;
+}
+div.genContent table.cleanTable caption { 
+	background:transparent;
+	text-align:left;
+	font-weight:bold; 
+	color:#036;
+	font-size:12px; 
+	margin-bottom: 10px;
+}
+div.genContent table.cleanTable thead tr th {
+	text-align:center;
+	font-size:11px; 
+}
+table thead tr.subHeader,
+table thead tr.subHeader th,
+table thead tr th.subHeader,
+table thead tr th.tblSubheader,
+div.genContent table.cleanTable thead tr th.subHeader,
+body.application table thead tr.subHeader th,
+body.application table thead tr th.subHeader,
+body.application table thead tr th.grayRowSubHeader {
+	background: #e9e9e9;
+}
+div.genContent table.cleanTable thead th, 
+div.genContent table.cleanTable thead td { 
+	background:#ccc; 
+	font-weight:bold; 
+	font-size:11px; 
+	border-right:#ccc 1px solid; 
+	vertical-align:top; 
+}       
+div.genContent table.cleanTable thead tr th.active { 
+	background:#fff url(//images.delta.com/delta/backgrounds/tables/table_th_active_right.gif) no-repeat top right; 
+}
+div.genContent table.cleanTable thead tr th div { 
+	padding:3px 0 3px 0;
+}
+div.genContent table.cleanTable thead tr th.active div { 
+	background:transparent url(//images.delta.com/delta/backgrounds/tables/table_th_active_left.gif) no-repeat top left; 
+}
+div.genContent table.cleanTable thead tr th a {
+	font-weight:normal;
+	text-decoration:underline;
+}
+div.genContent table.cleanTable tbody tr.odd { 
+	background:#fff; 
+}
+div.genContent table.cleanTable tbody tr.even { 
+	background:#fff; 
+}
+div.genContent table.cleanTable tbody tr td { 
+	border-right:#ccc 1px solid; 
+	border-top:1px solid #d8d8d8; 
+}
+div.genContent table.cleanTable tbody tr th { 
+	text-align:middle;
+	background:#79c; 
+	color:#fff; 
+	font-weight:bold;
+}
+div.genContent table.cleanTable tfoot td { 
+	background:#ccc;
+	font-size:10px; 
+}
+div.genContent table.cleanTable tfoot td div.notes {
+	background:transparent;
+}
+div.genContent table.cleanTable tbody tr th a, 
+div.genContent table.cleanTable tbody tr th a:link, 
+div.genContent table.cleanTable tbody tr th a:visited, 
+div.genContent table.cleanTable tbody tr th a:hover {
+	font-weight:normal;
+	color:#fff;
+	text-decoration:underline;
+}
+/* ******************** /shared/components/css/tabs.jsp ******************** */
+div.contentTabs_2, 
+div.applicationTabs_2, 
+div.applicationTabs_2_2Line, 
+div.contentTabs_3, 
+div.applicationTabs_3, 
+div.applicationTabs_3_2Line, 
+div.contentTabs_4, 
+div.applicationTabs_4, 
+div.applicationTabs_4_2Line, 
+div.contentTabs_5, 
+div.applicationTabs_5, 
+div.applicationTabs_5_2Line, 
+div.contentTabs_6, 
+div.applicationTabs_6, 
+div.applicationTabs_6_2Line  { 
+	margin-left:0px;
+	margin-bottom:0px;
+	position:relative;
+	float:left;
+	z-index:10;
+	width:100%;
+}
+div.genContentLeft>div.applicationTabs_2, 
+div.contentTabs_2 ul, 
+div.contentTabs_3 ul, 
+div.contentTabs_4 ul, 
+div.contentTabs_5 ul, 
+div.contentTabs_6 ul { 
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+div.contentTabs_2 ul li, 
+div.applicationTabs_2 ul li, 
+div.applicationTabs_2_2Line ul li  { 
+	width:35%; 
+}
+div.contentTabs_3 ul li, 
+div.applicationTabs_3 ul li, 
+div.applicationTabs_3_2Line ul li { 
+	width:30%; 
+}
+div.contentTabs_4 ul li, 
+div.applicationTabs_4 ul li, 
+div.applicationTabs_4_2Line ul li { 
+	width:22%; 
+}
+div.contentTabs_5 ul li, 
+div.applicationTabs_5 ul li, 
+div.applicationTabs_5_2Line ul li { 
+	width:17%; 
+}
+div.contentTabs_6 ul li, 
+div.applicationTabs_6 ul li, 
+div.applicationTabs_6_2Line ul li  { 
+	width:10%; 
+}
+div.contentTabs_2 ul li, 
+div.contentTabs_3 ul li, 
+div.contentTabs_4 ul li, 
+div.contentTabs_5 ul li, 
+div.contentTabs_6 ul li { 
+	float:left;
+	margin:0 3px -1px 3px;
+	background:#eaeaea url(//images.delta.com/delta/backgrounds/tabs/tab_inactive_content_left.gif) no-repeat top left;
+	text-align:center;
+	border-bottom:#e2e2e2 1px solid;
+	font-family:Tahoma, Arial, sans-serif; 
+}
+div.contentTabs_2 ul li a, 
+div.contentTabs_3 ul li a, 
+div.contentTabs_4 ul li a, 
+div.contentTabs_5 ul li a, 
+div.contentTabs_6 ul li a { 
+	background:transparent url(//images.delta.com/delta/backgrounds/tabs/tab_inactive_content_right.gif) no-repeat top right;
+	display:block;
+	padding:4px;
+	cursor:pointer;
+	cursor:hand; 
+}
+div.contentTabs_2 ul li.active, 
+div.contentTabs_3 ul li.active, 
+div.contentTabs_4 ul li.active, 
+div.contentTabs_5 ul li.active, 
+div.contentTabs_6 ul li.active { 
+	background:#fff url(//images.delta.com/delta/backgrounds/tabs/tab_active_content_left.gif) no-repeat top left;
+	border-bottom:#fff 1px solid; 
+}
+div.contentTabs_2 ul li.active a, 
+div.contentTabs_3 ul li.active a, 
+div.contentTabs_4 ul li.active a, 
+div.contentTabs_5 ul li.active a, 
+div.contentTabs_6 ul li.active a { 
+	background:transparent url(//images.delta.com/delta/backgrounds/tabs/tab_active_content_right.gif) no-repeat top right; 
+}
+div.contentTabsContent,
+div.applicationTabsContent { 
+	clear:both;
+	border:#e2e2e2 1px solid;
+	position:relative; 
+}
+div.applicationTabsContent { 
+	border-top:#036 15px solid;
+	padding:5px; 
+}
+div.genContent div.active, 
+div.section table * div.inactive { 
+	display:block; 
+}
+div.genContent div.inactive, 
+div.lpContent div.inactive { 
+	display:none; 
+}
+div.contentTabsContent span.tracking {
+	display:none;
+}
+
+/* rules for content contained by a tab layout */
+div.contentTabsContent h2 { 
+	display:none; 
+}
+div.contentTabsContent h3 {
+	clear:both;
+	margin:8px !important;
+	padding:4px 0 4px 12px !important;
+	background-color:#e9e9e9 !important;
+	font-size:13px !important;
+	font-weight:normal !important;
+	color:#036;
+}
+div.contentTabsContent div.item,  
+div.contentTabsContent div.item_alt { 
+	margin:8px;
+	padding-bottom:16px; 
+}
+div.contentTabsContent div.item div.intro,
+div.contentTabsContent div.item_alt div.intro{
+	margin-left:12px;
+	width:261px;
+	float:left;
+	display:inline;
+}
+
+div.item_alt div.intro {}
+div.item_alt div.featured img { margin: 0px 10px 0px 10px;}
+
+div.contentTabsContent div.item div.intro p { 
+	margin-right:8px; 
+}
+div.contentTabsContent div.item div.intro a {
+	display:block;
+}
+div.contentTabsContent div.item div.links,
+div.contentTabsContent div.item_alt div.links {
+	clear:left;
+}
+div.contentTabsContent div.item div.intro div.links ul {
+	list-style:image outside;
+	margin:0 10px 0 17px;
+	padding:0;
+}
+div.contentTabsContent div.item div.intro div.links ul li, 
+div.contentTabsContent div.item div.links ul li {
+	list-style-position:outside;
+	list-style-image:url(//images.delta.com/delta/icons/arrow_dotted.gif);
+	margin:0;
+	padding:0;
+}
+div.contentTabsContent div.item div.links ul li {
+	padding-bottom:10px;
+}
+div.contentTabsContent div.item div.thumbnails { 
+	float:right;
+	width:176px;
+	margin-bottom:8px;
+}
+div.contentTabsContent div.item div.thumbnails a img { 
+	background:transparent url(//images.delta.com/delta/getaway_ideas/thumbnail-off.gif); 
+}
+div.contentTabsContent div.item div.thumbnails a:hover img { 
+	background:transparent url(//images.delta.com/delta/getaway_ideas/thumbnail-on.gif); 
+}
+div.contentTabsContent div.item div.thumbnails p { 
+	font-family:Tahoma, Arial, sans-serif;
+	font-weight:bold;
+	padding-bottom:3px;
+}
+div.contentTabsContent div.item div.callout { 
+	float:right;
+	clear:right;
+	width:176px;
+	background:#eaeaea;
+	margin-bottom:16px;
+}
+div.contentTabsContent div.item div.callout h4 { 
+	font-size:11px;
+	background:#eaeaea;
+	padding:9px 5px 0 7px;
+	margin:0;
+}
+div.contentTabsContent div.item div.callout table { 
+	clear:left;
+	margin:0 5px 8px 5px;
+	padding:0;
+}
+div.contentTabsContent div.item div.callout table td { 
+	margin:0;
+	padding:0;
+}
+div.contentTabsContent div.additional { 
+	display:none; 
+}
+div.applicationTabs_2 ul, 
+div.applicationTabs_3 ul, 
+div.applicationTabs_4 ul, 
+div.applicationTabs_5 ul, 
+div.applicationTabs_6 ul, 
+div.applicationTabs_2_2Line ul, 
+div.applicationTabs_3_2Line ul, 
+div.applicationTabs_4_2Line ul, 
+div.applicationTabs_5_2Line ul, 
+div.applicationTabs_6_2Line ul { 
+	clear:both;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+div.applicationTabs_2 ul li, 
+div.applicationTabs_3 ul li, 
+div.applicationTabs_4 ul li, 
+div.applicationTabs_5 ul li, 
+div.applicationTabs_6 ul li { 
+	float:left;
+	display:inline;
+	list-style-type:none;
+	background-color:#ccc;
+	margin-right:20px; 
+	font-weight:bold;
+	text-align:center;
+}
+div.applicationTabs_2 ul li.active, 
+div.applicationTabs_3 ul li.active, 
+div.applicationTabs_4 ul li.active, 
+div.applicationTabs_5 ul li.active, 
+div.applicationTabs_6 ul li.active { 
+	background:#036; 
+}
+div.applicationTabs_2 ul li, 
+div.applicationTabs_3 ul li, 
+div.applicationTabs_4 ul li, 
+div.applicationTabs_5 ul li, 
+div.applicationTabs_6 ul li { 
+	background:#79c; 
+}
+div.applicationTabs_2 ul li a, 
+div.applicationTabs_3 ul li a, 
+div.applicationTabs_4 ul li a, 
+div.applicationTabs_5 ul li a, 
+div.applicationTabs_6 ul li a { 
+	color:#fff;
+}
+div.applicationTabs_2 ul li.active a, 
+div.applicationTabs_3 ul li.active a, 
+div.applicationTabs_4 ul li.active a, 
+div.applicationTabs_5 ul li.active a, 
+div.applicationTabs_6 ul li.active a { 
+	color:#fff;
+	display:block;
+	width:100%;
+	padding:5px;
+	cursor:pointer;
+	cursor:hand; 
+}
+div.applicationTabs_2 ul li a, 
+div.applicationTabs_3 ul li a, 
+div.applicationTabs_4 ul li a, 
+div.applicationTabs_5 ul li a, 
+div.applicationTabs_6 ul li a { 
+	display:block;
+	width:100%;
+	padding:5px;
+	cursor:pointer;
+	cursor:hand; 
+}
+div.applicationTabs_2 div.clear, 
+div.applicationTabs_3 div.clear, 
+div.applicationTabs_4 div.clear, 
+div.applicationTabs_5 div.clear, 
+div.applicationTabs_6 div.clear { 
+	background-image:none;
+	background-color:#036;
+	height:15px;
+	margin-bottom:0; 
+}
+div.applicationTabs_2_2Line ul li, 
+div.applicationTabs_3_2Line ul li, 
+div.applicationTabs_4_2Line ul li, 
+div.applicationTabs_5_2Line ul li, 
+div.applicationTabs_6_2Line ul li { 
+	float:left;
+	display:inline;
+	list-style-type:none;
+	margin-right:20px; 
+	font-weight:bold;
+	text-align:center; 
+	height: 35px;
+	background:#79c;
+}
+div.applicationTabs_2_2Line ul li.active, 
+div.applicationTabs_3_2Line ul li.active, 
+div.applicationTabs_4_2Line ul li.active, 
+div.applicationTabs_5_2Line ul li.active, 
+div.applicationTabs_6_2Line ul li.active { 
+	background:#036; 
+}
+div.applicationTabs_2_2Line ul li a, 
+div.applicationTabs_3_2Line ul li a, 
+div.applicationTabs_4_2Line ul li a, 
+div.applicationTabs_5_2Line ul li a, 
+div.applicationTabs_6_2Line ul li a { 
+	color:#fff;
+}
+div.applicationTabs_2_2Line ul li.active a, 
+div.applicationTabs_3_2Line ul li.active a, 
+div.applicationTabs_4_2Line ul li.active a, 
+div.applicationTabs_5_2Line ul li.active a, 
+div.applicationTabs_6_2Line ul li.active a { 
+	color:#fff;
+	background:#036;
+	display:block;
+	width:100%;
+	padding:5px;
+	cursor:pointer;
+	cursor:hand; 
+}
+div.applicationTabs_2_2Line ul li a, 
+div.applicationTabs_3_2Line ul li a, 
+div.applicationTabs_4_2Line ul li a, 
+div.applicationTabs_5_2Line ul li a, 
+div.applicationTabs_6_2Line ul li a { 
+	background:#79c;
+	display:block;
+	width:100%;
+	padding:5px;
+	cursor:pointer;
+	cursor:hand;
+	height:25px !important;
+}
+div.applicationTabs_2_2Line div.clear, 
+div.applicationTabs_3_2Line div.clear, 
+div.applicationTabs_4_2Line div.clear, 
+div.applicationTabs_5_2Line div.clear, 
+div.applicationTabs_6_2Line div.clear { 
+	background-image:none;
+	background-color:#036;
+	height:15px;
+	margin-bottom:0; 
+}
+
+/* ******************** End /shared/components/css/tabs.jsp ******************** */
+/*** corporate page layout and format classes ***/
+body.corporate div#genHeader, 
+body.tech_ops div#genHeader, 
+body.cargo div#genHeader { 
+	width: 950px;
+	height:70px;
+}
+body.popupwin,
+body.inlineDocument,
+body.wait {
+	background:#fff none;
+}
+body.inlineDocument {
+	background: #fff none;
+}
+body.corporate,
+body.tech_ops, 
+body.cargo {
+	background:#fff url(//images.delta.com/delta/temp/header_bg_corp_temp.gif) no-repeat left top;
+}
+
+body.corporate div.genContainer,
+body.tech_ops div.genContainer, 
+body.cargo div.genContainer {
+    margin-top:10px;
+}
+
+body.tech_ops div#genHeader div#logo { 
+	float:left;
+	margin:16px 0 0 15px;
+	width:157px;
+	height:32px;
+	background:transparent url(//images.delta.com/delta/logos/tech_ops_logo_trans.gif) no-repeat; 
+}
+body.tech_ops div#genHeader>div#logo { 
+	float:left;
+	margin:16px 0 0 29px; 
+}
+body.tech_ops div#genHeader div#logo p,
+body.cargo div#genHeader div#logo p {
+	display:none;
+}
+body.cargo div#skyteam {
+	display: none;
+}
+
+body.fareSale div#callouts,
+body.promotion div#callouts {
+	margin-top:10px;
+}
+body.promotion * div.genLeft {
+	padding-bottom: 190px;
+}
+div.flashseo {
+	display: none;
+}
+
+/*** generic page layout classes ***/
+div.genContainer, 
+div.appContainer, 
+div.noLeft, 
+div.genLeft { 
+	float:left; 
+}
+div.genLeft {
+	padding-bottom: 50px;
+}
+div.genContainer,
+div#genContainer,
+div.appContainer { 
+	width: 950px;
+	background: transparent url(//images.delta.com/delta/temp/leftnav_bg_temp.gif) repeat-y;
+	margin-top: 0px;
+}
+div.appContainer { 
+	background-image: none;
+}
+div.noLeft { 
+	width: 950px;
+	margin-left: 0px;
+	margin-left: 10px;
+}
+body.offPageError div.noLeft {
+}
+div.genLeft { 
+	width: 230px !important;
+	margin:0; 
+	float:left;
+	overflow: hidden;
+}
+div.clear { 
+	clear:both;
+	line-height:0px;
+	height:0px; 
+}
+
+/*** general left navigation layout and format classes ***/
+div#genLeftNav { 
+	font-family: Tahoma, Arial, sans-serif;
+	padding:0 0 5px 0;
+	width:100%;
+	background:#eaeaea; 
+	border-bottom: #ccc 1px solid;
+}
+div#genLeftNav h1 { 
+	background:#036;
+	font-size:13px;
+	color:#fff;
+	padding:3px 10px  4px 30px;
+	width:190px !important;
+}
+div#genLeftNav * a { 
+	display:block;
+	text-decoration:none;
+	color:#333; 
+}
+div#genLeftNav * a:hover { 
+	color:<%= default_href %>;
+	text-decoration:underline; 
+}
+div#genLeftNav h1 a { 
+	font-weight:bold;
+	font-size:13px;
+	color:#fff; 
+}
+div#genLeftNav h1 a:hover { 
+	color:#fff; 
+}
+div#genLeftNav h2 { 
+	font-weight:bold;
+	font-size:11px;
+	background-color:#eaeaea;
+	padding:2px 0 4px 20px;
+	margin: 0px 10px 0px 10px;
+	border-top:1px solid #ccc; 
+}
+div#genLeftNav h2.navHover { 
+	background:#eaeaea url(//images.delta.com/delta/icons/arrow_leftnav_up.gif) no-repeat 11px 4px; 
+}
+div#genLeftNav h2 a { 
+	color:#333; 
+}
+div#genLeftNav h2.navHot { 
+	color:<%= default_href %>;
+	background:#eaeaea url(//images.delta.com/delta/icons/arrow_leftnav_down.gif) no-repeat 8px 6px; 
+}
+div#genLeftNav h2.navHot a { 
+	color:<%= default_href %>; 
+}
+div#genLeftNav h2.navActive { 
+	color:<%= default_href %>;
+	background:#eaeaea url(//images.delta.com/delta/icons/arrow_leftnav_up.gif) no-repeat 9px 3px; 
+}
+div#genLeftNav h2.navActive a { 
+	color:<%= default_href %>; 
+}
+div#genLeftNav h3 { 
+	font-weight:normal;
+	font-size:11px;
+	background-color:#eaeaea;
+	padding:2px 0 3px 40px;
+}
+div#genLeftNav h3 a { 
+	font-weight:normal;
+	color:#333; 
+}
+div#genLeftNav h3 a:hover { 
+	color:<%= default_href %>;
+	text-decoration:underline; 
+}
+div#genLeftNav h3.navHot { 
+	font-weight:bold;
+	font-size:11px;
+	color:<%= default_href %>;
+	background-color:#eaeaea; 
+}
+div#genLeftNav h3.navHot a { 
+	font-weight:bold;
+	color:<%= default_href %>;
+	text-decoration:none; 
+}
+div#genLeftNav h3.navHot a:hover { 
+	text-decoration:underline; 
+}
+div#genLeftNav h4 { 
+	font-weight:normal;
+	font-size:11px;
+	background:#f9f9f9;
+	padding:2px 0 3px 50px; 
+}
+div#genLeftNav h4 a { 
+	font-weight:normal;
+	color:#333;	
+}
+div#genLeftNav h4 a:hover { 
+	font-weight:normal;
+	color:<%= default_href %>;
+	text-decoration:underline; 
+}
+div#genLeftNav h4.navHot { 
+	font-weight:bold;
+	color:<%= default_href %>; 
+}
+div#genLeftNav h4.navHot a { 
+	font-weight:bold;
+	color:<%= default_href %>;
+	text-decoration:none; 
+}
+div#genLeftNav h4.navHot a:hover { 
+	font-weight:bold;
+	color:<%= default_href %>;
+	text-decoration:underline; 
+}
+
+/*** related links classes ***/
+div.genRelatedLinks,
+div.appContainer div.genLeft div.genRelatedLinks { 
+	float:left;
+	display:block;
+	margin: 50px 0px 50px 0px;
+	width:100%;
+}
+div.genRelatedLinks h2,
+div.appContainer div.genLeft div.genRelatedLinks h2,
+body.cargo * div.genRelatedLinks h2 { 
+	margin: 0px 10px 0px 10px;
+	display:block;
+	font-weight:bold;
+	font-size:13px;
+	color:#036;
+	padding:2px 0 0 18px;
+	border-bottom:1px solid #ccc; 
+}
+div.genRelatedLinks a,
+body.cargo * div.genRelatedLinks a { 
+	font-weight:normal;
+	color:#333;
+	display:block;
+	padding:4px 0 0 18px;
+	margin: 0px 10px 0px 10px;
+}
+div.genRelatedLinks a:hover { 
+	color:<%= default_href %>; 
+}
+
+/*** content well container classes ***/
+div.genContent { 
+	float:left;
+	width: 470px;
+	font-family:Verdana, sans-serif;
+	margin: 0px 0px 0px 50px;
+	padding:30px 0px 0px 0px;
+}
+div.genContentLeft { 
+	width:310px;
+	float:left;
+}
+div.genContentRight { 
+	float:right;
+	width:150px;
+	text-align:right;
+	margin:43px 0 50px 0; 
+}
+div.genContent div.aircraftSpecs div.genContentLeft { 
+	width:190px;
+	margin:0; 
+	padding:0; 
+}
+div.genContent div.aircraftSpecs div.genContentRight { 
+	width:310px;
+	margin:0; 
+	padding:0; 
+}
+div.genContentRight h2 { 
+	text-align:left; 
+}
+.formatNoPadding { 
+	margin:0;
+	padding:0; 
+}
+div.genContentWrap { 
+	width:390px;
+}
+div.genContentWrap p { 
+	width:auto; 
+}
+
+div#PageMastHead { 
+	width: 670px; 
+	margin-left:50px;
+	float:left;
+	margin-top:10px;
+}
+
+div.indexLeft { 
+	position:relative;
+	float:left;
+	width:218px;
+	padding:15px 0 50px 17px; 
+}
+div.indexLeftNav { 
+	float:left;
+	width:230px;
+	margin:0 0 0 0;
+	padding:0; 
+}
+div.indexLeftNav div { 
+	background-color:#e9e9e9;
+	margin:0;
+	padding:0 24px 0 10px; 
+}
+div.indexLeftNav img { 
+	display:block; 
+}
+div.indexLeftNav h2 { 
+	font-size:12px;
+	color:#036;
+	margin:0 0 2px 0;
+	padding:0 0 0 17px;
+	background:transparent url(//images.delta.com/delta/icons/arrow_dotted.gif) no-repeat 0 4px; 
+}
+div.indexLeftNav h2 img { 
+	display:none; 
+}
+div.indexLeftNav p { 
+	background-color:#e9e9e9;
+	margin:0;
+	padding:0 0 10px 17px; 
+}
+
+div#modalOverlayBgDiv {
+	position:absolute;
+	top:0px; 
+	left:0px; 
+	background:URL(//images.delta.com/delta/backgrounds/apps/shadow.gif); 
+	background-repeat: repeat; 
+	display:none; 
+	z-index: 1000;
+}
+div#modalPopHeader { 
+	z-index:1001;
+}
+
+div#defaultPopHeaderTitle { 
+	display: none;
+	float: left;
+}
+div#modalHeader {
+	text-align: right;
+	background: #036;
+	padding: 5px;
+}
+div#modalHeader a {
+    color: #fff;
+    font-weight: normal;
+}
+div#modalHeader a:hover {
+	text-decoration: none;
+}
+div#modalPopupContent { 
+	padding-top:5px;
+	display:block;
+	z-index:1001;
+}
+* div.screenPopup_noFollow{
+	position: absolute;
+	background-color:#fff;
+	text-align:left;
+	border:2px solid #069;
+	color:#333;
+	font-size:11px;
+	padding:8px;
+	top:0px;
+	left:0px;
+	z-index:1001;
+}
+*>div.screenPopup_follow{ 
+	position: fixed !important;
+	background-color:#fff;
+	text-align:left;
+	border:2px solid #069;
+	color:#333;
+	font-size:11px;
+	padding:8px;
+	top:0px;
+	left:0px;
+	z-index:1001;
+}
+* iframe.popupFrame_noFollow { 
+	z-index: 999; 
+	position: absolute; 
+	background-color:#fff;
+}
+*>iframe.popupFrame_follow { 
+	z-index: 999;
+	position: fixed !important; 
+	background-color:#fff;
+}
+pre#debug_data { 
+	width: 960px; 
+	height: 500px; 
+	overflow: auto; 
+	border: 2px solid #ccc; 
+}
+
+div.appColumn, 
+div#appColumn,
+div#getaway_ideas div#applicationColumn,
+div#travel_getaways div#applicationColumn {
+	float: left;
+	width: 230px;
+	margin-right: 50px;
+}
+div#getaway_ideas div#applicationColumn,
+div#travel_getaways div#applicationColumn {
+	margin: 0px;
+}
+div.mitigate {
+	float:left;
+	width:240px;
+	height:240px;
+}
+
+div#genContainer div#genContent {
+	width: 470px;
+	float: left;
+	margin: 0 0 50px 0; 
+	padding-top: 19px;
+}
+div#genContainer:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+div#genContainer div.genLeft { 
+	width: 237px;
+	margin: 0px 19px 0px 0px; 
+}
+div#getaway_ideas,
+div#travel_getaways {
+	background-image: none;
+}
+div#getaway_ideas div.genContent {
+	margin-top:10px;
+}
+div#getaway_ideas div.genContent h1 {
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+}
+div#getaway_ideas div.genContent a.backToPrevious {
+	float: left;
+	clear:left;
+}
+div#getaway_ideas div.genContent {
+	width: 670px;
+	margin:0px 0px 0px 0px; 
+	float:right;
+}
+div#forward_to_friend {
+	float: right;
+	width: auto;
+}
+div#getaway_ideas div.applicationColumn div#booking_itinerary_search h3 {
+	width:100% !important;
+}
+div#getaway_ideas div.applicationColumn  {}
+
+
+/* End Layout containers */
+/* ********** landing page layout and format classes ********** */
+div.lpContent,
+div#genLeftNav { 
+	position:relative;
+	float:left; 
+}
+body.lpBody div#layoutContainer div.genContainer div#genLeftNav {
+	background:#fff;
+	margin-top:;
+}
+body.lpBody div#layoutContainer div.genContainer { 
+	background:#e6ebef;
+	margin-top: 0px !important;
+	margin-top: -35px;
+}
+body.lpBody div#layoutContainer div.genContainer div.genContent { 
+	background:transparent;
+	width: 510px;
+	margin-left: 50px;
+}
+
+
+div.lpContent { 
+	width: 510px;
+	margin:15px 0 -2px 31px; 
+} /* not sure if still used*/
+
+body.lpBody div.genContent p { 
+	margin:0 20px 15px 0; 
+}
+
+body.lpBody div.genContainer div#genLeftNav { 
+	background:transparent url(//images.delta.com/delta/backgrounds/layout/lp_leftnav_top.gif) no-repeat top left;
+	width: 230px;
+	padding:0 0 15px 0;
+	border-bottom: #fff 0px solid;
+}
+body.lpBody div#genLeftNav h2 { 
+	font-size:11px;
+	margin-left:10px;
+	padding:0 0 0 15px;
+	background:transparent url(//images.delta.com/delta/icons/arrow_dotted.gif) no-repeat 0 center;
+	border-top:0 !important; 
+	
+}
+body.lpBody div#genLeftNav h2 a { 
+	color:#069; 
+	background:transparent url(//images.delta.com/delta/icons/arrow_dotted.gif) no-repeat 0 center;
+	background: #ffffff !important;
+}
+body.lpBody div#genLeftNav h2 img { 
+	display:none; 
+}
+
+body.lpBody div#genLeftNav p { 
+	font-family: Tahoma, Arial, sans-serif;
+	margin: 5px 10px 10px 15px;
+	padding:0 10px 10px 10px; 
+}
+body.lpBody div.RelatedLinks { 
+	margin: 50px 10px 50px 10px;
+}
+body.lpBody div.RelatedLinks h2 { 
+	font-size:13px !important;
+	color:#036;
+	margin:0;
+	padding:0 0 0 17px;
+	border-bottom:#c01933 1px solid; 
+	position: relative; /* peekaboo bug fix for IE6 */
+	min-width: 0; /* peekaboo bug fix for IE7 */	
+}
+body.lpBody div.RelatedLinks a { 
+	display:block;
+	font-weight:normal;
+	color:#069;
+	margin: 5px 10px 0px 15px;
+	padding:0px 10px 0px 10px; 
+}
+body.lpBody div.RelatedLinks a:hover { 
+	color:#069;
+	text-decoration:underline; 
+}
+div.Feature, 
+div.genContent div.Feature {
+	width: 150px;
+	padding:0;
+	background-color:#fff; 
+	float:left;
+}
+div.genContent div#weather {padding-top: 100px;}
+body.lpBody div.Feature { 
+	width: 230px;
+	margin: 0px 10px 10px 0px;
+}
+body.lpBody div.Feature div { 
+	line-height:14px;
+	margin:0;
+	padding:0 24px 0 15px; 
+} /* need to expire this usage */
+div.genContent div.Feature h2,
+body.lpBody div.Feature h2 { 
+	font-size:11px;
+	color:#036;
+	margin:10px; 
+	margin-bottom:0;
+}
+div.genContent div.Feature p,
+body.lpBody div.Feature p {
+	padding: 0;
+	margin:10px; 
+	margin-bottom:0;
+}
+div.genContent div.Feature a,
+body.lpBody div.Feature a { 
+	font-weight:normal;
+	background:transparent url(//images.delta.com/delta/icons/arrow_tiny_blue.gif) no-repeat left center; 
+	padding:0 0 0 10px;
+	margin:10px; 
+	float:right;
+}
+body.planning_reservations_landing div#Marketing,
+body.traveling_checkin_landing div#Marketing {
+	width: 100%;
+}
+body.planning_reservations_landing div#Marketing div.item,
+body.traveling_checkin_landing div#Marketing div.item {
+	width: 230px;
+	float:left;
+}
+body.planning_reservations_landing div#Marketing div#msg1,
+body.traveling_checkin_landing div#Marketing div#msg1 {
+	margin-right: 10px;
+}
+body.skymiles_landing img.heroImage {
+	margin-bottom: 10px;
+}
+body.skymiles_landing div#ExclusiveOffers {
+	background: #fff;
+	width: 270px;
+	float: left;
+}
+body.skymiles_landing div#ExclusiveOffers h2,
+body.skymiles_landing div#ExclusiveOffers h3,
+body.skymiles_landing div#ExclusiveOffers p {
+	margin-left: 10px;
+}
+body.skymiles_landing div#ExclusiveOffers p {
+	margin-bottom: 0px;
+}
+body.skymiles_landing div#ExclusiveOffers p a {
+	font-weight: normal;
+}
+body.skymiles_landing div#Marketing {
+	width: 150px;
+	float: left;
+	margin-left: 10px;
+}
+body.skymiles_landing div.skymiles_member_benefits {
+	clear: both;
+	margin-top: 10px;
+}
+body.skymiles_landing div.skymiles_member_benefits h2 {
+	margin-top: 10px;
+	margin-top: 10px;
+}
+body.skymiles_landing  div.FeaturedMemberBenefits ul {
+	padding:0px;
+	width: 124px;
+	overflow: hidden;
+	float: left;
+}
+body.skymiles_landing  div.FeaturedMemberBenefits ul li.active {
+	background-color:#f9f9f9;
+}
+body.skymiles_landing  div.FeaturedMemberBenefits ul li a {
+	font-weight: normal;
+}
+body.skymiles_landing  div.FeaturedMemberBenefits ul li {
+	background:#EAEAEA url(//images.delta.com/delta/icons/arrow_dotted.gif) no-repeat scroll 10px 14px;
+	border-bottom: 1px solid #ccc;
+	display:block;
+	font-weight:normal;
+	height:25px !important;
+	padding:10px 0 0 25px;
+	width: 100%;
+}
+body.skymiles_landing  div#PhotoViewer div#NEW,
+body.skymiles_landing  div#PhotoViewer div#MED,
+body.skymiles_landing  div#PhotoViewer div#MIL {
+	float: left;
+	clear: none;
+	margin-left: 10px;
+}
+
+body.lpBody div.Marketing { 
+	clear:both;
+	padding:8px -10px 0 0; 
+}
+html>body.lpBody div#layoutContainer div.genContainer div.genContent div.Marketing { 
+	clear:both;
+	padding:8px 0 0 0;
+	float:right;
+	margin-right:-31px; 
+}
+body.lpBody div.Marketing table { 
+	margin-right:25px; 
+}
+html>body.lpBody div#layoutContainer div.genContainer div.genContent div.Marketing table { 
+	margin-right:25px; 
+}
+body.lpBody div.Marketing table tr td { 
+	padding-right:10px; 
+}
+
+div#Marketing a.linkNav{ 
+	margin:0;
+	padding:0 10px 0 15px;
+	background:transparent url(//images.delta.com/delta/icons/arrow_dotted.gif) no-repeat 0 4px; 
+	float:right;
+}
+
+div#Marketing div#ad_three{
+	width:195px;
+}/********************* /shared/components/css/messaging.jsp ******************** */
+/*** Light Blue Callout Style ***/
+div.lightBlue { 
+	background-color:#e6ebef;
+	padding-left:10px; 
+}
+div.lightBlue ul { 
+	width:100%;
+	padding:0 0 0 16px; 
+}
+div.lightBlue li { 
+	margin-bottom:10px; 
+}
+/*** promo boxes (right rail) ***/
+div.genPromo { 
+	width:190px;
+	float:right;
+	text-align:right;
+	margin-bottom:8px; 
+}
+div.genPromo img { 
+	display:block; 
+}
+div.genPromo div { 
+	font-size:11px;
+	line-height:11px;
+	text-align:left;
+	padding:0 5px 0 20px;
+	margin:0; 
+}
+div.genPromo div img { 
+	display:block;
+	width:80px;
+	height:40px;
+	margin-bottom:3px; 
+}
+div.genPromo a { 
+	font-size:11px;
+	font-weight:normal;
+	text-decoration:underline; 
+}
+div.genPromo a:hover { 
+	text-decoration:underline; 
+}
+/*** promo boxes (right rail) replacing above ***/
+div.contentTabsContent div.item div.callout table, 
+div.contentTabsContent div.item div.callout table tr td {
+	border:transparent 0px solid;
+}
+div#callouts { 
+	float:right;
+	width:190px;
+	text-align:right;
+	margin-top: 60px;
+}
+div#callouts * {
+	text-align: left;
+}
+div#callouts div.doYouKnow h4 {text-align: center;}
+div#callouts div.genRelatedLinks {
+	margin: 0px 0px 10px 0px;
+}
+div#callouts div.genRelatedLinks h2,
+div#callouts div.genRelatedLinks a,
+div#callouts div.genRelatedLinks a:link {
+	margin: 0px;
+	padding-left: 0px;
+}
+div.genLeft div.promo,
+div#callouts div.promo { 
+	float:right;
+	text-align: left;
+	margin-bottom: 10px;
+	background:#f9f9f9;
+	border:#ccc 1px solid;
+	padding-top:16px; 
+}
+div.genLeft div.promo {
+	padding: 10px;
+}
+div.genLeft div.promo h2 {
+}
+div.genLeft div.promo img,
+div#callouts div.promo img { 
+	display:block;
+	width:80px;
+	height:40px;
+	margin:0 0 0 10px;
+	float:left; 
+}
+div.genLeft div.promo>img,
+div#callouts div.promo>img { 
+	margin:0 0 3px 20px; 
+}
+div.genLeft div.promo p,
+div#callouts div.promo p { 
+	clear:both;
+	font-size:9px;
+	line-height:11px;
+	text-align:left;
+	padding:10px 5px 20px 20px;
+	margin:0;
+}
+div.genLeft div.promo p {
+	padding:10px 0px 10px 0px;
+}
+div#callouts div.promo p a { 
+	font-size:9px;
+	font-weight:normal;
+	text-decoration:underline; 
+}
+div#callouts div.promo p a:hover { 
+	text-decoration:underline; 
+}
+div.genContent div.sidebar { 
+	width:218px;
+	background:#e9e9e9;
+	float:left;
+	text-align:right;
+	margin:0 15px 8px 0;
+	text-align:left;
+	padding-bottom:10px; 
+}
+div.genContent div.sidebar h2 { 
+	font-size:11px;
+	color:#002A50;
+	padding:10px 10px 0 10px;
+}
+div.genContent div.sidebar p { 
+	clear:both;
+	text-align:left;
+	padding:0 10px 20px 10px;
+	margin:0; 
+}
+div#callouts div.sidebar { 
+	width:150px;
+	background:#e9e9e9;
+	float:right;
+	text-align:right;
+	margin:0 0 8px 0;
+	text-align:left;
+	padding-bottom:10px; 
+}
+div#callouts div.sidebar h2 { 
+	font-size:11px;
+	color:#036;
+	padding:10px 10px 0 10px;
+}
+div#callouts div.sidebar p { 
+	clear:both;
+	text-align:left;
+	padding:0 10px 20px 10px;
+	margin:0; 
+}
+div#callouts div.sidebar ol { 
+	padding:0 10px 0 30px; 
+}
+div#callouts div.sidebar ol li { 
+	padding: 0; 
+}
+/*** wide alerts style callout classes ***/
+div.alertsWideTop { 
+	background: #ccc;
+	float:left;
+	width:100%;
+}
+div.active div.alertsWideTop { 
+	background:#ea8a1a;
+}
+div.alertsWideTop h2 { 
+	
+	padding-top:6px !important;
+	padding-left:10px !important;
+	margin:0;
+}
+div.active div.alertsWideTop h2 { 
+	color:#fff; 
+}
+div.alertsWideCell { 
+	float:left;
+	padding:0 15px 0 15px; 
+}
+div.alertsWideCell strong { 
+	color:#f00; 
+}
+div.alertsWideBody { 
+	float:left;
+	padding:10px; 
+	border-left:#ccc 5px solid;
+	border-right:#ccc 5px solid;
+	border-bottom:#ccc 5px solid;
+	background: #fff; 
+}
+div.alertsWideBody * {
+	margin: 0px;
+	padding: 0px;
+}
+div.active div.alertsWideBody { 
+	border-left:#ea8a1a 5px solid;
+	border-right:#ea8a1a 5px solid;
+	border-bottom:#ea8a1a 5px solid;
+}
+div.alertsWideBottom { 
+	margin-bottom: 10px
+}
+div.moreInfo {
+	background: #f9f9f9;
+	border: #e2e2e2 1px solid;
+	margin-bottom: 10px;
+}
+div.nextSteps,
+div.doYouKnow,
+div.moreInfo {
+        background: #f9f9f9;
+        border: #e2e2e2 2px solid;
+        margin-bottom: 10px;
+}
+div.nextSteps h4,
+div.doYouKnow h4,
+div.moreInfo h4 {
+	text-align: center;
+	margin: 0px 0px 5px 0px;
+	padding: 3px;
+	font-size: 11px;
+}
+div.nextSteps h4 {
+	color: #fff;
+	background: #79c;
+}
+div.doYouKnow h4 {
+	color: #333;
+	background: #ccc;
+}
+div.moreInfo h4 {
+	color: #fff;
+	background: #036;
+}
+div.nextSteps ul li,
+div.doYouKnow ul li,
+div.moreInfo ul li {
+        list-style-position:outside;
+        list-style-image:url(//images.delta.com/delta/icons/arrow_dotted.gif);
+        margin: 0px;
+        padding: 0px;
+        padding-bottom: 3px;
+        text-align: left;
+}
+div.doYouKnow p {
+	padding: 0px 5px 5px 5px;
+}
+div#genContainer div#callouts {
+	float: right;
+	width: 150px;
+	text-align: left;
+	margin: 43px 0 50px 0;
+}
+div#callouts div.graphicMsg {
+	margin-bottom: 10px;
+}
+table#travelUpdatesTable tbody tr td a {
+	padding: 0px 0px 0px 10px;
+	background:#fff url(//images.delta.com/delta/icons/arrow_tiny_blue.gif) no-repeat left center;
+}
+/* ******************** /shared/components/css/odds and ends.jsp ******************** */
+.tagline { 
+	margin:0;
+	padding:0 0 5px 0;
+	font-size:11px;
+	font-weight:bold;
+}
+.smallText { 
+	font:normal 9px Verdana, sans-serif;
+	color:#333; 
+}
+.smallText a { 
+	color:#069;
+	text-decoration:underline;
+}
+.smallText a:hover { }
+/*** bookmark classes ***/
+div.bookmark_enabled { 
+	float:right;
+	width:141px;
+	margin-top:-16px;
+	margin-bottom:5px;
+	display:block; 
+}
+div.bookmark_enabled a, 
+div.bookmark_enabled a:link, 
+div.bookmark_enabled a:visited, 
+div.bookmark_enabled a:hover { 
+	display:block;
+}
+div.bookmark_enabled p { 
+	display:none; 
+}
+/*** /planning_reservations/plan_flight/aircraft_types_layout/ ***/
+div.seatMap {
+	width: 190px;
+	float: left;
+}
+div.details {
+	width: 270px;
+	float: left;
+	margin-left: 10px;
+}
+div.details table.aircraftSpecs {
+}
+div.details table.aircraftSpecs col.headers {
+	width: 50%;
+}
+div.details table.aircraftSpecs tbody th {
+	background: #e9e9e9;
+	text-align: left;
+	color: #333;
+}
+div.details table.aircraftSpecs tbody th a,
+div.details table.aircraftSpecs tbody th a:link  {
+	padding: 0px;
+	margin: 0px;
+	color: #069 !important;
+	font-weight: bold !important;
+	text-decoration: none !important;
+}
+div.legend table {
+	width: 100%;
+}
+div.legend table,
+div.legend table tbody tr td {
+	border: none !important;
+}
+div.legend table tbody tr td {
+	padding: 0px 5px 0px 0px;
+	vertical-align: middle;
+}
+div.legend table tbody tr td img {
+	margin-top: -1px;
+}
+/*** /planning_reservations/plan_flight/destinations/new_routes/new_york_flights/ ***/
+body.featured_departure_city div#layoutContainer div.genContainer {
+	background: transparent;
+}
+/* used on this page: /planning_reservations/plan_flight/destinations/new_routes/new_york_flights/index.jsp  */
+div#Subscribe  {
+	margin-bottom: 10px;
+}
+div#Subscribe span,
+div#Subscribe span a {
+	display: inline;
+	width: auto;
+	float: right;
+}
+div#Subscribe div.rss_feed {
+	float: right;
+	display: block;
+}
+body.featured_departure_city div#layoutContainer div.genContainer div.genContent h1 {
+	font-size: 13px;
+	font-weight: bold;
+	display: inline;
+	float: left;
+}
+span#MoreInfo {
+	float: right;
+}
+body.featured_departure_city div#layoutContainer div.genContainer div.genContent img#ImageTitle {
+	margin-bottom: 10px;
+}
+body.featured_departure_city div#layoutContainer div.genContainer div.genLeft a.linkMore,
+body.featured_departure_city div#layoutContainer div.genContainer div.genContent a.linkMore {
+	padding-left: 15px;
+	display: block;
+	background:transparent url(//images.delta.com/delta/icons/arrow_dotted.gif) no-repeat 0 4px;
+}
+body.featured_departure_city div#additional,
+body.featured_departure_city div.tabContainer {
+	width: 230px;
+	float: left;
+	height: 200px;
+}
+body.featured_departure_city div#additional {
+	background: #e6ebef;
+	height:240px;
+}
+body.featured_departure_city div.tabContainer {
+	margin-left: 10px;
+}
+body.featured_departure_city div.tabContainer  div.contentTabsContent {
+	padding: 10px;
+	height: 100%; 
+	overflow-x: hidden; 
+	overflow-y: auto;
+}
+body.featured_departure_city div.tabContainer  div.contentTabsContent ul li { 
+	list-style-position: outside;
+	list-style-image: url(//images.delta.com/delta/icons/arrow_dotted.gif);
+	padding:0;
+	margin:0 0 10px 0; 
+}
+body.featured_departure_city div#additional * {
+	margin: 10px;
+}
+table#NYCSaleFares {
+	margin-top: 10px;
+}
+table#NYCSaleFares,
+table#NYCSaleFares thead tr th,
+table#NYCSaleFares tbody tr td {
+	border: 0px;
+}
+table#NYCSaleFares thead th {
+	background: #e6ebef;
+	text-align: left;
+}
+table#NYCSaleFares tfoot td {
+	background: transparent;
+}
+div.rss_feed,
+body.featured_departure_city div.rss_feed { 
+	background:transparent url(//images.delta.com/delta/icons/rssfeedIcon.gif) no-repeat left;
+	float:right;
+	clear:right;
+	width:91px;
+	height:20px;
+	margin-top: 10px;
+}
+body.featured_departure_city div.rss_feed a, 
+body.featured_departure_city div.rss_feed a:link, 
+body.featured_departure_city div.rss_feed a:visited, 
+body.featured_departure_city div.rss_feed a:hover { 
+	display:block;
+	width:91px;
+	height:20px; 
+	background: transparent;
+}
+/*** two and three column unordered list ***/
+ul.listTwoColumns,
+ul.listThreeColumns { 
+	float:left;
+	margin:0 15px 15px 0;
+	padding:0;
+	list-style:none; 
+}
+ul.listTwoColumns { 
+	width:200px; 
+}
+ul.listThreeColumns { 
+	width:133px;
+}
+/*** department links list ***/
+div.listDepartmentLinks { 
+	line-height:15px;
+}
+div.listDepartmentLinks h2 { 
+	font-size:11px;
+	margin:0;
+	padding:0 0 0 15px;
+	background:#fff url(//images.delta.com/delta/icons/arrow_dotted.gif) no-repeat 0 4px;
+}
+div.listDepartmentLinks h2 img { 
+	display:none; 
+}
+div.listDepartmentLinks  p { 
+	margin:0 0 15px 15px;
+	padding:0;
+}
+div.inline * {
+	display:inline;
+}
+/*** anchor links ***/
+div.linkAnchorLinks { 
+	background-color:#e6ebef;
+	margin:0 0 22px 0;
+	padding:10px; 
+}
+div.linkAnchorLinks ul { 
+	list-style: image outside;
+	margin:0 10px 0 19px; 
+	padding:0; 
+}
+div.linkAnchorLinks ul li { 
+	list-style-position: outside;
+	list-style-image: url(//images.delta.com/delta/icons/arrow_anchor.gif);
+	padding:0;
+	margin:0 0 3px 0; 
+}
+div.linkAnchorLinks a { 
+	line-height: 18px;
+}
+div.linkAnchorLinks2 { 
+	width:120px;
+	background-color:#e6ebef;
+	margin:0 0 22px 0;
+	padding:9px 0 9px 5px; 
+}
+div.linkAnchorLinks img { 
+	width:11px;
+	height:12px;
+	margin:0 4px 0 0;
+	padding:0;
+}
+/*** return to top anchor links ***/
+div.linkReturnToTop { 
+	clear:left;
+	margin:0 0 10px 0;
+	padding:0 0 0 15px;
+	background:<%= background %> url(//images.delta.com/delta/icons/arrow_returntotop.gif) no-repeat left; 
+}
+div.linkReturnToTop img { 
+	display:none; 
+}
+/*** popup layout and format classes ***/
+#popHeader { 
+	background:#036 url('//images.delta.com/delta/backgrounds/headers/popup_header_center.jpg') repeat-x;
+	position:relative;
+	height:31px;
+	overflow:hidden; 
+}
+#popHeader td {
+	border:none;
+	padding:0px;
+}
+#popHeader td.left { 
+	width:600px; 
+}	
+#popHeader td.right { 
+	background:#036 url('//images.delta.com/delta/backgrounds/headers/popup_header_right.jpg') no-repeat;
+	width:100px;
+	padding:6px 8px 6px 25px; 
+}
+#popHeader td.right a { 
+	font-weight:normal;
+	color:#fff;
+	text-decoration:none; 
+}
+div.popContainer { 
+	position:relative;
+	margin:15px 0 0 20px; 
+}
+/*** calendar layout and format classes ***/
+.calBorder {
+	background-color:#e6ebef;
+}
+th.calMonth {
+	background-color:#069; 
+	color:#fff; 
+	font-weight:bold; 
+	text-align: center; 
+	vertical-align: top; 
+	font-size:11px;
+}
+th.calDay {
+	background-color:#e6ebef; 
+	color:#333; 
+	font-weight: normal; 
+	text-align: center; 
+	vertical-align: top; 
+	font-size:11px;
+}
+td.calDate {
+	background-color:#eaeaea; 
+	text-align: right; 
+	vertical-align: top; 
+	border: 1px solid #eaeaea; 
+	font-size:11px;
+}
+a.calArrow:link,
+a.calArrow:visited,
+a.calArrow:active {
+	color:#fff; 
+	font-weight:bold; 
+	text-decoration:none;
+}
+a.calDate:link,
+a.calDate:visited,
+a.calDate:active {
+	color:#002A50; 
+	text-decoration:none;
+}
+/*** three column list item archives ***/
+div.collection { 
+	float:left;
+	width:33%; 
+}
+div.collection ul { 
+	margin-left:0px;
+	margin-bottom:0px;
+	padding-left: 0px;
+	list-style:none; 
+}
+div.collection ul li { 
+	padding:0 0 0px 9px;
+	background:transparent url('//images.delta.com/delta/icons/arrow_tiny_blue.gif') no-repeat 0 .4em; 
+}
+div.collection ul li a, 
+div.collection ul li a:link { 
+	font-weight:normal;
+	cursor:pointer; 
+}
+div.mobile_enabled { 
+	background:transparent url('//images.delta.com/delta/buttons/mobileenabled.gif') no-repeat left;
+	float:right;
+	width:126px;
+	height:20px;
+	margin-top:-36px; 
+}
+div.mobile_enabled a, 
+div.mobile_enabled a:link, 
+div.mobile_enabled a:visited, 
+div.mobile_enabled a:hover { 
+	display:block;
+	width:126px;
+	height:20px; 
+}
+div.mobile_enabled p { display:none; }
+div.rss_feed { 
+	background:transparent url('/images/icons/rssfeedIcon.gif') no-repeat left;
+	float:right;
+	width:91px;
+	height:20px;
+	margin-top:-36px; 
+}
+div.rss_feed a, 
+div.rss_feed a:link, 
+div.rss_feed a:visited, 
+div.rss_feed a:hover { 
+	display:block;
+	width:91px;
+	height:20px; 
+}
+div.rss_feed p { 
+	display:none; 
+}
+div.FAQIndexGroup {
+	float:left;
+	margin-bottom:10px;
+}
+div.FAQIndex{
+	margin-left: 10px;
+	float:left;
+	width: 230px;
+	overflow: hidden;
+}
+div.FAQIndex h2 {
+	background:#79c;
+	color:#fff;
+	display: block;
+	padding: 3px;
+	width: 100%;
+}
+div.FAQIndex h2 a {
+	font:bold 13px Tahoma, Arial, sans-serif;
+	color:#fff;
+}
+div#PlanningReservations,
+div#Profile {
+	margin-left: 0px;
+}
+div.FAQIndexLinks {
+	background:#f9f9f9;
+	border: #ccc 1px solid;
+	padding: 10px;
+}
+div.FAQIndexLinks p a {
+	background:transparent url('//images.delta.com/delta/icons/arrow_dotted.gif') no-repeat left center;
+	padding-left:15px;
+}
+div.sitemapCol {
+	float:left;
+	margin-left:10px;
+	margin-bottom: 10px;
+	width:230px;
+	background:#f9f9f9;
+}
+div#first-column {
+	margin-left: 0;
+}
+div.sitemapHeader {
+	float:left;
+	width: 100%;
+}
+div.sitemapHeader h2 {
+	background:#79c;
+	border: #79c 1px solid;
+	color:#fff;
+	display: block;
+	padding: 3px;
+}
+div.sitemapCol h2 a {
+	font:bold 13px Tahoma, Arial, sans-serif;
+	color:#fff;
+}
+div.sitemapCol h3 {
+	padding:0px 0px 0px 15px;
+}
+div.sitemapCol2 {
+	background:#f9f9f9;
+	border: #ccc 1px solid;
+}
+div.sitemapLower {
+	float:left;
+	width:710px;
+	background:#f9f9f9;
+	border: #ccc 1px solid;
+	padding: 10px;
+}
+ul.sitemap {
+	list-style-type:none;
+	margin:0px 10px 0 45px;
+	padding: 0 0 15px 0;
+	width:175px;
+}
+div#hr-container {
+	margin-top: 10px;
+}
+ul.sitemap a:link {
+	font:normal 11px Tahoma, Arial, sans-serif;
+	color:#333;
+}
+ul.sitemap a:visited {
+	font:normal 11px Tahoma, Arial, sans-serif;
+	color:#333;
+} 
+ul.sitemap li {
+	list-style-type:none;
+	font:normal 11px Tahoma, Arial, sans-serif;
+	color:#333;
+}
+/* getaway ideas */
+body#gay_travel * div.featured {
+	float: right;
+	width: auto;
+}
+body#gay_travel * div.intro {
+	width: 70%;
+}
+/* used on the getaway idea pages to view photos */
+div#photoViewer { 
+	font-family:Verdana, sans-serif;
+	font-size:11px;
+	width:274px; 
+}
+div#photoViewer img { 
+	display:block; 
+}
+div#photoViewer div.header,
+div#photoViewer div.footer { 
+	color:#fff;
+	background:#069;
+	height:23px; 
+}
+div#photoViewer div.footer { 
+	height:20px;
+	clear:both; 
+}
+div#photoViewer div.header div,
+div#photoViewer div.footer div { 
+	float:left; 
+}
+div#photoViewer div.footer div.right,
+div#photoViewer div.header div.right { 
+	float:right; 
+}
+div#photoViewer div.header div.pvTitle { 
+	position:relative;
+	font-weight:bold;
+	vertical-align:middle;
+	top:30%; 
+}
+div#photoViewer div.content { 
+	background-color:#e9e9e9;
+	padding-top:10px; 
+}
+div#photoViewer div.content select { 
+	display:none;
+	margin-left:10px;
+	margin-bottom:10px;
+	width:50%; 
+}
+div#photoViewer div.content div#pvDescrip { 
+	padding:0 10px 10px 10px; 
+}
+div#photoViewer div.content div#pvImgCap { 
+	color:#036;
+	font-weight:bold;
+	clear:both;
+	padding:10px; 
+}
+div#photoViewer div.content div.pvSlider { 
+	height:45px;
+	border-top:1px solid #ccc; 
+}
+div#photoViewer div.content div.pvSlider div { 
+	float:left;
+	background:#e2e2e2;
+	padding:0 3px 0 2px;
+	height:100%;
+	cursor:pointer; }
+div#photoViewer div.content div.pvSlider div img { 
+	position:relative;
+	top:40%; 
+}
+div#photoViewer div.content div.pvSlider div.right { 
+	float:right;
+	padding:0 2px 0 3px; 
+}
+div#photoViewer div.content div.pvSlider div#pvThumbs { 
+	padding:0px;
+	background:#fff;
+	cursor:default; 
+}
+div#photoViewer div.content div.pvSlider div#pvThumbs ul li img { 
+	top:0;
+	cursor:pointer; 
+}
+div#photoViewer div.content div.pvSlider div#pvThumbs ul { 
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+div#photoViewer div.content div.pvSlider div#pvThumbs ul li { 
+	padding:6px 6px 0 6px;
+	margin:0;
+	float:left; 
+}
+div#TravelGetaways {
+	width:670px;
+}
+div#FeaturedDestinations {
+    width:670px;
+    margin-bottom: 10px;
+}
+div#FeaturedDestinations div#Destination1,
+div#FeaturedDestinations div#Destination2,
+div#FeaturedDestinations div#Destination3 {
+    width:210px;
+    float:left;
+    margin-right:10px;
+}
+div#FeaturedDestinations div#Destination1 div.imageNav img.right,
+div#FeaturedDestinations div#Destination2 div.imageNav img.right,
+div#FeaturedDestinations div#Destination3 div.imageNav img.right {
+    margin-right:10px;
+}
+body.corporate div.genContent form table, 
+body.corporate div.genContent form table tr td, 
+div.genContent form table, div.genContent form table tr td {
+	border: 0;
+}
+div.genContent form table *, 
+div.genContent form table tr td table tr td * {
+	padding: 0;
+}
+div.genContent form table td {
+	padding: 7px 0;
+}
+table td#firstname {
+	width: 130px;
+}
+td#fltdate, 
+td#fltwodate {
+	width: 95px;
+}
+<% /* enhanced calendar css */ %>
+table.calTable {
+	width: 100%;
+}
+table tr td.calHeader,
+table tr td.enahncedCalJump	{
+	text-align: center; 
+	font-weight: bold;
+	padding: 3px;
+}
+table.enhancedCalBorder {
+	width: 150px;
+}
+table.enhancedCalBorder tr td {
+	padding: 2px;
+}
+div#globalContainer {
+	width: 45%; 
+	float: left; 
+	margin: 0 20px 0 0;
+}
+div#habitatContainer {
+	width: 45%; 
+	float: left;
+}
+div#globalContainer h2 {
+	margin-top: 10px;
+}
+div#globalContainer h2 img {
+	margin:0px 5px 0px 5px;
+}
+<% /* opinionlab css */ %>
+#oo_feedback_float {
+	font: 12px arial;
+	text-align: center;
+	width:120px;
+	height:50px;
+	padding: 0 12px 12px 0;
+	visibility: hidden;
+}
+#fbText {
+	display: block;
+	padding: 3px;
+}
+#olOver {
+	background: #FFF;
+	border: 1px solid #CCC;
+	padding: 10px;
+}
+#oo_feedback_static {
+	cursor: pointer;
+}
+@media print {
+	#oo_feedback_float, #olUp, #olOver { display: none; }
+}
+body#search div.applicationTabsContent h2,
+body#search div.applicationTabsContent p.indent {
+	clear:left;
+}
+/* search */
+body#search div.appContainer {background:none}
+body#search div#applicationColumn { 
+	width: 230px;
+	float:left;
+}
+body#search div#genLoginSpacer {
+	padding-top: 30px;
+}
+body#search div.appContent {
+	float: left; 
+	margin-left: 50px; 
+	padding-top: 30px;
+	width: 670px; 
+}
+body#search div.applicationTabs_3 > ul > li {margin-right:10px;}
+body#search .loading2 { 
+	font-family: Tahoma, Arial, sans-serif; 
+	font-size: 13px;
+	color: #FFFFFF; 
+	background-color: #ea8a1a; 
+	text-align: center; 
+	vertical-align: middle; 
+	border: 2px solid #805602; 
+	width: 185px;
+	float: left;
+	margin-left:50px;
+}
+body#search div.inactive {
+	display: none;
+}
+body#search div#tips {float:left;padding:8px 10px 0px 8px;margin-left:10px}
+body#search div#search-content {width:700px}
+body#search div#searchIn {float:left; margin-left:25px; margin-bottom:10px}
+body#search fieldset#goButton div.info {float:right}
+body#search fieldset#goButton input#submitGo {width:auto}
+body#search fieldset#goButton > div.info {padding-right:10px}
+body#search fieldset#goButton > input#submitGo {position:relative; left:-10px}
+/* ========== TEMPORARY ONLY ========== */
+#promo_wtgm {
+	_width: 180px;
+}
+ul#introArea {
+	list-style-image: url(//images.delta.com/delta/icons/confirmation_check.gif);
+	margin-left: 25px;
+}
+div.linkReturnToTop { 
+	clear:left;
+	margin:0 0 10px 0;
+	padding:0 0 0 15px;
+	background:#fff url(//images.delta.com/delta/icons/arrow_returntotop.gif) no-repeat left; 
+}
+div.listDepartmentLinks h2 { 
+	font-size:11px;
+	margin:0;
+	padding:0 0 0 15px;
+	background:#fff url(//images.delta.com/delta/icons/arrow_dotted.gif) no-repeat 0 4px;
+}
+.imgCheckinOptions {
+	float: left;
+	margin: 0px 5px;
+}
+/* fix for defect 6927 - select box width problem in FF */
+#Country_codes, #State_codes, #City_codes {
+	min-width: 265px;
+}
+/*** header and copy format classes (using existing class names) ***/
+.cpyPageTitle, .cpyHeader1, .cpyHeader2, .cpyBold { font-weight:bold; }
+.cpyPageTitle { font-size:17px;color:#036; }
+.cpyHeader1 { font-size:13px;color:#036;clear:left; } 
+.cpyHeader2, .cpyBody { font-size:11px; }
+.cpySmall { font-size:10px; }
+.cpySmall b { font-weight:bold;font-size:10px;color:#333; }
+/* .cpySmall a { font-size:10px;font-weight:normal;text-decoration:underline; } */
+.cpyAdvisory {color:#069;} 
+/********** begin fix for defect 7354  ***************/
+/* ****** /traveling_checkin/baggage/baggage_allowance/second_bag_fee/bagfee_claimform/index.jsp ***** */
+div#bagfeeclaim-content input.shortTextbox { width: 50px; margin:2px 0 4px; _margin-top: 0; height: 18px;}
+div#bagfeeclaim-content table { width:355px}
+div#bagfeeclaim-content form label.indent {display: inline; margin-left: 20px;}
+/* ****** /planning_reservations/plan_flight/online_reservations/best_fare_guarantee/claim_form/index.jsp ***** */
+div#bfgclaim-content input.shortTextbox { width: 50px; margin:2px 0 4px; _margin-top: 0; height: 18px;}
+div#bfgclaim-content table#paxinfo {width:260px}
+div#bfgclaim-content table.flifo {width:350px}
+/* *** /skymiles/manage_account/link_accounts/index.jsp *** */
+div#callouts.linkaccounts {margin-top: 10px}
+/*************** end fix for defect 7354 ****************/
+/********** secure flights (booking and awards) *************** */
+div#confirmation-content div#reminders div#remindersContent ul li.important { 
+	margin-left: 0px;
+	background-image: none;
+	list-style-type:none;
+}
+div#confirmation-content div#reminders div#remindersContent ul li.important span { 
+	margin-left: 0px;
+}
+div#confirmation-content div#reminders div#remindersContent ul {
+	background: transparent url('//images.delta.com/delta/icons/new.gif') no-repeat scroll 10px -7px;
+}
+body.cargo * div.contentTabs_3 ul li, 
+body.cargo * div.applicationTabs_3 ul li, 
+body.cargo * div.applicationTabs_3_2Line ul li { 
+	width:25%; 
+}
+body.cargo div#genHeader div#logo { 
+	float:left;
+	margin:16px 0 0 15px;
+	width:167px;
+	height:42px;
+	background:transparent url(//images.delta.com/delta/logos/cargo_logo.gif) no-repeat; 
+}
+body.cargo div#genHeader>div#logo { 
+	float:left;
+	margin:16px 0 0 29px; 
+}
+body.cargo div.genContainer  {
+	background: transparent none;
+}
+body.cargo div.genContainer div.genLeft div#genLoginSpacer {
+	height: 30px;
+}
+body.cargo div.genContainer div.genLeft div#genLeftNav {
+	background: transparent;
+	border-width: 0px;
+	margin-top:30px;
+}
+body.cargo div.genContainer div.genLeft div#genLeftNav,
+body.cargo div.genContainer div.genLeft div#genLeftNav h2 {
+	background: transparent;
+}
+body.cargo div.genContainer div.genLeft div#genLeftNav h2 {
+	background:#fff url(//images.delta.com/delta/icons/arrow_dotted.gif) no-repeat 0 4px;
+	margin-left:0px;
+	border-width: 0px;
+}
+body.cargo div.genContainer div.genLeft div#genLeftNav h2 a {
+	color: #069;
+}
+body.cargo * div#callouts {
+	padding-top: 10px;
+	margin-top: 0px;
+}
+body.cargo * div.RelatedLinks a {
+	display: block !important;
+}
+body.cargo fieldset fieldset {
+	float: left;
+	padding: 0 30px 10px 0;
+}
+div.buttonNav  {
+	clear:both;
+	margin-bottom:10px;
+}
+body.cargo fieldset.radioButtons label{ display:inline}
+body.tech_ops * div.contentTabs_3 ul li, 
+body.tech_ops * div.applicationTabs_3 ul li, 
+body.tech_ops * div.applicationTabs_3_2Line ul li { 
+	width:25%; 
+}
+body.tech_ops div#genHeader div#logo { 
+	float:left;
+	margin:16px 0 0 15px;
+	width:167px;
+	height:42px;
+	background:transparent url(//images.delta.com/delta/logos/tech_ops_logo_trans.gif) no-repeat;  
+}
+body.tech_ops div#genHeader>div#logo { 
+	float:left;
+	margin:16px 0 0 29px; 
+}
+body.tech_ops div.genContainer  {
+	background: transparent none;
+}
+body.tech_ops div.genContainer div.genLeft div#genLoginSpacer {
+	height: 30px;
+}
+body.tech_ops div.genContainer div.genLeft div#genLeftNav {
+	background: transparent;
+	border-width: 0px;
+	margin-top:30px;
+}
+body.tech_ops div.genContainer div.genLeft div#genLeftNav,
+body.tech_ops div.genContainer div.genLeft div#genLeftNav h2 {
+	background: transparent;
+}
+body.tech_ops div.genContainer div.genLeft div#genLeftNav h2 {
+	background:#fff url(//images.delta.com/delta/icons/arrow_dotted.gif) no-repeat 0 4px;
+	margin-left:0px;
+	border-width: 0px;
+}
+body.tech_ops div.genContainer div.genLeft div#genLeftNav h2 a {
+	color: #069;
+}
+body.tech_ops * div#callouts {
+	padding-top: 10px;
+	margin-top: 0px;
+}
+body.tech_ops * div.RelatedLinks a {
+	display: block !important;
+}
+
+div#genHeader div#logo a {
+	display:block;
+	height:32px;
+	width:157px;
+}
+
+div#genHeader a {
+	color:#006699;
+	font-size:11px;
+	font-weight:normal;
+	margin:0 4px;
+}
+
+div#genHeader div#skyteam {
+	background:transparent url(//images.delta.com/delta/logos/header_logos_trans.gif) no-repeat scroll right top;
+	float:left;
+	height:32px;
+	margin:16px 0 0;
+	width:39px;
+}
+
+div#genHeader div#skyteam a {
+	display:block;
+	height:32px;
+	width:39px;
+}
+
+div#genHeader div#skyteam p {
+	display:none;
+}
+
+div#techNews {float:left;margin-top:15px;}
+div#techNews ul {float:left;margin:0px;padding:0px;list-style-type:none;}
+div#techNews li {background:url(//images.delta.com/delta/icons/arrow_tiny_blue.gif) no-repeat 0px 5px;padding:0px 0px 0px 9px;margin-bottom:15px;}
+div#techNews a {font-weight:normal;}
+div#techNews h3 {margin-bottom:10px;}

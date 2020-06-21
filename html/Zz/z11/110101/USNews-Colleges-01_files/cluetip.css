@@ -1,0 +1,156 @@
+/* global */
+#cluetip-close img {
+  border: 0;
+}
+#cluetip-title {
+  overflow: hidden;
+}
+#cluetip-title #cluetip-close {
+  float: right;
+  position: relative;
+}
+#cluetip-waitimage {
+  width: 43px;
+  height: 11px;
+  position: absolute;
+}
+.cluetip-arrows {
+background-position:0 0;
+background-repeat:no-repeat;
+display:none;
+height:21px;
+left:-12px;
+position:absolute;
+top:0;
+width:21px;
+}
+#cluetip-extra {
+  display: none;
+}
+
+.cluetip-rounded, .cluetip-helper {
+background: transparent url(http://static.usnews.com/images/cluetip/tooltip-bottom.png) no-repeat 0 100%;
+font-size: 1em;
+padding-bottom: 10px;
+}
+
+.cluetip-rounded ul, .cluetip-helper ul  {
+margin-top: 10px;
+}
+
+.cluetip-rounded ul li, .cluetip-helper ul li {
+    list-style-image: none;
+}
+
+.cluetip-rounded #cluetip-outer, .cluetip-helper #cluetip-outer {
+background: transparent url(http://static.usnews.com/images/cluetip/tooltip-top.png) no-repeat 0 0;
+margin-top: -10px;
+}
+
+.cluetip-rounded #cluetip-title, .cluetip-helper #cluetip-title {
+background-color: transparent;
+position: relative;
+}
+
+.cluetip-rounded #cluetip-inner, .cluetip-helper #cluetip-inner {
+padding: 5px 20px 20px 20px;
+width: 180px;
+position: relative;
+font-family:Helvetica,Arial,sans-serif !important;
+line-height: 1.3em;
+font-size: 1.1em;
+color: #000;
+}
+
+.cluetip-rounded div#cluetip-close, .cluetip-helper div#cluetip-close { 
+  text-align: right;
+  margin: 0 5px 5px;
+  color: #009;
+  background: transparent;
+}
+.cluetip-rounded div#cluetip-close a, .cluetip-helper div#cluetip-close a  {
+  color: #777;
+}
+
+
+/* rounded arrows */
+
+.clue-right-rounded .cluetip-arrows, .clue-right-helper .cluetip-arrows {
+  background-image: url(http://static.usnews.com/images/cluetip/tooltip-arrowleft.png);
+margin-left: -3px;
+margin-top: 9px;
+}
+.clue-left-rounded .cluetip-arrows, .clue-left-helper .cluetip-arrows {
+  background-image: url(http://static.usnews.com/images/cluetip/tooltip-arrowright.png);
+  left: 100%;
+  margin-left: 12px;
+}
+.clue-top-rounded .cluetip-arrows, .clue-top-helper .cluetip-arrows {
+background-image:url(http://static.usnews.com/images/cluetip/tooltip-arrowdown.png);
+height:21px;
+left:50%;
+margin-left:-11px;
+margin-top:-7px;
+top:100%;
+width:22px; 
+}  
+.clue-bottom-rounded .cluetip-arrows, .clue-bottom-helper .cluetip-arrows {
+background-image:url(http://static.usnews.com/images/cluetip/tooltip-arrowup.png);
+height:21px;
+left:50%;
+margin-left:-11px;
+top:-26px;
+width:22px;
+}
+
+
+
+/* stupid IE6 HasLayout hack */
+.cluetip-rounded #cluetip-title,
+.cluetip-rounded #cluetip-inner {
+  zoom: 1;
+}
+
+/* left facets */
+
+#teaser {
+  background: transparent url(http://static.usnews.com/images/cluetip/tooltip-bottom.png) no-repeat 0 100%;
+   width: 200px;
+padding-right: 18px; 
+font-size: 1.2em;
+padding-bottom: 10px;
+border: 0px;
+font-family: Arial, Helvetica, sans-serif;
+z-index: 10;
+}
+
+#teaser .close {
+font-weight:bold;
+left:204px;
+margin:0;
+padding:0;
+position:absolute;
+right:0;
+top:0;
+z-index:11;
+}
+* html #teaser .close {
+top: 10px;
+}
+#teaser p {
+ background: transparent url(http://static.usnews.com/images/cluetip/tooltip-top.png) no-repeat 0 0;
+margin-top: -18px;
+padding-top: 28px;
+margin-left: -8px;
+padding-left: 16px;
+padding-right: 12px;
+padding-bottom: 14px;
+width: 100%;
+}
+* html #teaser p {
+position: relative;
+}
+#teaser a {
+font-weight: bold;
+}
+

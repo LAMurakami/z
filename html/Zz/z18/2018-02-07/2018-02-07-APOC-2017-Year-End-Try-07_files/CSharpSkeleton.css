@@ -1,0 +1,119 @@
+﻿/** Elements **/
+
+Invalid {
+background: #fed;
+border: 1px solid red;
+}
+
+/** Classes **/
+.validationSummaryBox
+{
+	background-color: #FFDF80;
+	border: solid 1px #CC0000;
+	font-style: italic;
+	text-align: left;
+}
+.validationSummaryBox li
+{
+	margin-left:25px;
+}
+.confirmationSummaryBox
+{
+	background-color: #FFDF80;
+	border: 1px solid #008000;
+	color: #008000 !important;
+	font-style: italic;
+	text-align: center;
+}
+.confirmationSummaryBox li
+{
+	list-style-type: none;
+}
+
+.wizardDiv
+{
+}
+
+/** Classes **/
+.formLayout
+{
+    width: 100%;
+    padding: 1em;
+    margin-left:60px;
+}
+.formLayoutControl
+{
+    padding: .25em;
+    margin:auto;
+}
+#individualNameDiv
+{
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+}
+#individualNameDiv .formLayoutControl
+{
+    float: left;
+}
+#addressDiv
+{
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+}
+#addressDiv .formLayoutControl
+{
+    float: left;
+}
+.formLayoutFlowRow
+{
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    padding-top:1px;
+    padding-bottom:1px;
+}
+.formLayoutFlowRow .formLayoutControl
+{
+    float: left;
+}
+.flowControl
+{
+    overflow: hidden;
+}
+.flowControl .formLayoutControlLabel
+{
+    float: left;
+    text-align: right;
+    overflow: hidden;
+    padding-right: 20px;
+}
+.flowControl .formLayoutControlInput
+{
+    float: left;
+    overflow: hidden;
+}
+.formLayoutControlLabel
+{
+    text-align: left;
+}
+
+.currencyControl
+{
+    text-align: right;
+    width:400px;
+}
+.linkRow
+{
+    text-align: center;
+}
+.warning
+{
+    color: #FF0000;
+}
+
+#headerDiv
+{
+    text-align: center;
+}

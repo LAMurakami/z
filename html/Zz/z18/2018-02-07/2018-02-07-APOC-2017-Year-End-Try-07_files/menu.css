@@ -1,0 +1,183 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/* 
+    These elements are required for each web application and are stored in shared folder.
+    Modifications will affect all web applications.
+*/
+
+/*This styles the menu structure*/
+#menu{
+	clear: both;
+	width: 960px;
+	height: 27px;
+	background: url('../images/menuBG.gif') repeat-x #112039;
+	border-bottom: 4px solid #637ba5;
+	text-transform: uppercase;
+	font-family: Helvetica, Arial, sans-serif;
+}
+/*This styles the first level list*/
+#menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-weight: bold;
+}
+/*This styles the first level list items*/
+#menu ul li{
+	float: left;
+	color: #FFF;
+}
+/*This styles the list item link*/
+#menu ul li a{
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 3px 10px 4px 11px;
+	text-decoration: none;
+	display: block;
+	border-right: 1px solid #011745;
+	border-left: 1px solid #39507d;
+}
+/*This styles the first nav item of the list link to not have a left border*/
+#menu ul li#first_nav a{
+	border-left: none;	
+}
+/*This adds a right hand border to the last list item to create the illusion of a double border*/
+#menu ul li#last_nav{
+	border-right: 1px solid #39507d;	
+}
+/*This is the rollover effect on the link*/
+#menu ul li a:hover, #menu ul li a:focus{
+	color: #fff;
+	background: url('../images/menuRolloverBG7.gif') repeat-x bottom center #061D40;
+}
+/*This puts the rollover effect on the list item*/
+#menu ul li:hover, #menu ul li:focus, #menu ul li.sfhover{
+	color: #fff;
+	background: url('../images/menuRolloverBG7.gif') repeat-x bottom center #061D40;
+}
+#menu ul li a.active{
+	color: #fff;
+	background: url('../images/menuRolloverBG7.gif') repeat-x bottom center #061D40;
+}
+#menu ul li.active{
+	color: #fff;
+	background: url('../images/menuRolloverBG7.gif') repeat-x bottom center #061D40;
+}
+/*This does the main styling for all the dropdowns which are wrapped in divs depending on columns*/
+#menu ul li div.one_col, #menu ul li div.two_col, #menu ul li div.three_col{
+	display: none;
+	padding: 0 10px;
+	margin: 0 0 0 -10px;
+	background: url('../images/1col_dropdownBG.png') repeat-y;
+	position: absolute;
+	z-index: 10000;
+	text-transform: none;
+	font-weight: bold;
+	top: auto;
+	left: auto;
+}
+/*This is to define the two column background shadow*/
+#menu ul li div.two_col{
+	font-size: .9em;
+	background: url('../images/2col_dropdownBG.png') repeat-y;
+}
+/*This is to define the three column background shadow*/
+#menu ul li div.three_col{
+	font-size: .9em;
+	background: url('../images/3col_dropdownBG.png') repeat-y;	
+}
+/*This is the transparent white background for all the dropdowns*/
+#menu div.dropdownBG{
+	border-top: 4px solid #061D40;
+	border-bottom: 4px solid #061D40;
+	background: url('../images/dropdownBG.png') repeat;
+}
+
+#menu>ul>li>ul{
+	top: auto;
+	left: auto;
+}
+/*This is the hover effect to get the dropdowns to appear*/
+#menu ul li:hover div.one_col, #menu ul li:focus div.one_col, #menu ul li.sfhover  div.one_col, #menu ul li:hover div.two_col,  #menu ul li:focus div.two_col,  #menu ul li.sfhover div.two_col, #menu ul li:hover div.three_col,  #menu ul li:focus div.three_col,  #menu ul li.sfhover div.three_col{
+	display: block;	
+}
+#menu ul li ul
+{
+    z-index:100;
+    border: 2px ridge rgb(190, 181, 0);
+}
+/*This defines all the lists within lists that constitute the dropdown*/
+#menu ul li ul li
+{
+    z-index: 100;    
+	float: none;
+	display: block;
+	text-align: left;
+	border: none;
+	width: auto;
+	padding: 2px 0 0 0;
+}
+/*This is all the links within the dropdown*/
+#menu ul li ul li a{
+	color: White;
+	text-decoration: none;
+	border: none;
+}
+/*The hover effect on the links in the dropdown*/
+#menu ul li ul li a:hover, #menu ul li ul li a:focus, #menu ul li ul li:hover, #menu ul li ul li:focus, #menu ul li ul li.sfhover {
+	color: yellow;
+	background: none;
+}
+/*The width of the two_column dropdown*/
+#menu li div.two_col{
+	width: 	340px;
+}
+
+/*Sizing and positioning of the columns in the two column dropdown*/
+#menu ul li div.two_col ul.col_1, #menu ul li div.two_col ul.col_2{
+	border: none;
+	padding: 0;
+	margin: 0;
+	width: 170px;
+	position: relative;
+	background: none;
+	font-size: 1em;
+}
+/*The width of the three_column dropdown*/
+#menu li div.three_col{
+	width: 	510px;
+}
+/*Sizing and positioning of the columsn inthe three column dropdown*/
+#menu ul li div.three_col ul.col_1, #menu ul li div.three_col ul.col_2, #menu ul li div.three_col ul.col_3{
+	border: none;
+	padding: 0;
+	margin: 0;
+	width: 170px;
+	position: relative;
+	background: none;
+	font-size: 1em;
+}
+
+/* Drop Down */
+ul.drop{
+    position: absolute;
+    background-color:  #061d40;
+    margin: 2px;
+    border: 1px solid black;
+
+    -moz-border-bottom-left-radius: 2px;
+    -moz-border-bottom-right-radius: 2px;
+            
+    -webkit-border-bottom-left-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+
+    border-bottom-left-radius: 2px; /* future proofing */
+    border-bottom-right-radius: 2px; /* future proofing */
+}
+
+.drop li a, .drop li a:visited
+{
+    color: White;
+}

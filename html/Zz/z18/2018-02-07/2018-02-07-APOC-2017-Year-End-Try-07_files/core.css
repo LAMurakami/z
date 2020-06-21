@@ -1,0 +1,286 @@
+﻿@charset "utf-8";
+/* 
+    These elements are required for each web application and are stored in shared folder.
+    Modifications will affect all web applications.
+*/
+/* These are the required elements and should not be touched */
+body{
+	background: #030c1b;
+	padding: 0;
+	margin: auto;
+	/*text-align: center;*/
+}
+
+/*Clears both left and right float*/
+.clear{
+	clear: both;	
+}
+
+/*Float item left of content below it*/
+.left{
+	float: left;	
+}
+
+/*Float item right of content below it*/
+.right{
+	float: right;	
+}
+
+/*Hide elements for screen readers*/
+.hidden{
+	position: absolute;
+	left: 0px;
+	top: -200px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+/*This adds the gradient background on the top of the page*/
+#background_top{
+	background: url('../images/background.gif') repeat-x #0a306a;
+	width: 100%;
+	padding-top: 15px;
+}
+
+/*IDs are elements that can be used only once per page on the website*/
+#container{
+	width: 960px;
+	text-align: left;
+	margin: auto;
+}
+
+/*These all control the look and feel of the gold bar at the top of the page*/
+/*This is for the <div> container that holds the entire top bar*/
+#top_bar{
+	display: block;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	width: 960px;
+	min-height: 27px;
+	background: #f9c033 url('../images/gold_bar.gif') repeat-x;
+	position: relative;
+}
+/*Puts the rounded right corner on the top bar*/
+#top_bar_right{
+	background: url('../images/gold_bar_rtCorner.gif') no-repeat top right;
+	width: 7px;
+	height: 27px;
+	float: right;
+}
+/*This creates the State of Alaska Button on the left hand corner of the top bar*/
+#top_bar a#soa{/*This displays the State of Alaska Link if the images don't load*/
+	display: block;
+	float: left;
+	width: 153px;/*Want to set a width and height to make sure that the link doesn't show up under the button image*/
+	height: 21px;
+	padding: 4px 0 0 15px;
+	color:#00006F;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#top_bar a#soa:hover{
+	text-decoration: underline;	
+}
+
+#top_bar a#soa span{/*This positions the button image over the text*/
+	display: block;
+	width: 170px;
+	height: 27px;
+	background: url('../images/topbarSOA.gif') no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*This is the "container" for the list of links on the top bar*/
+#top_bar ul{
+	padding: 4px 0 0 10px;
+	margin: 0;
+	float: right;
+}
+/*This is the styling for each list item in the top bar list of links*/
+#top_bar ul li{
+	float: left;
+	display: inline;
+	list-style: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: .7em;
+	padding: 0 7px;
+}
+/*Style for the actual links in the top bar*/
+#top_bar ul li a{
+	color:#00006F;
+	font-weight: bold;
+	text-decoration: none;
+}
+/*Style for the hover / focus state of the list of links in the top bar*/
+#top_bar ul li a:hover, #top_bar ul li a:focus{
+	text-decoration: underline;
+}
+
+/*This control the header element*/
+/*This is the container as well as the holder of the actual header image*/
+#header{
+	display: block;
+	width: 960px;
+	min-height: 45px;
+	background: url('../images/headerBG_45.gif') repeat-x #112039;/*This will need to be changed depending on the background color or style you choose to use*/
+	clear: both;
+	position: relative;
+}
+
+/*This creates the link for the header with an invisible link block*/
+#header a#title{/*This styles the text just in case the image doesn't load*/
+	color: #ffffff;
+	float: left;
+	font-size: 1.2em;
+	padding: 15px 0 0 15px;
+	font-weight: bold;
+	display: block;
+	/*text-indent: -999px;*//*Use this line of code if the image you are using is transparent and the text would be visible behind it*/
+	width: 334px;/* The width and height will need to be set to the above image so that everything shows up appropriately*/
+	height: 30px;
+}
+
+#header a#title span{/* This hides the text so that you just have a link element, but screenreaders also have the link available*/
+	background: url('../images/APOC_OnlineForms.gif') top left no-repeat;/*The individual department / division header needs to be put in here*/
+	display: block;
+	width: 300px;/* The width and height will need to be set to the above image so that everything shows up appropriately*/
+	height: 45px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+/*This styles the search box, mostly taken from DFG's css*/
+#search{
+	float: right;
+	padding: 15px 15px 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: right;
+	position: relative;/*Need this to get the absolute positioning to work within this div box*/
+}
+/*This is the background for the search box*/
+#search #searchBox{
+	background: url('../images/searchbox.png') no-repeat top left;
+	width: 300px;
+}
+
+#searchSelect{
+	position: absolute;
+	top: 45px;
+	right: 15px;
+}
+
+#search input, #search label{
+	padding: 0;
+	margin: 0;
+}
+/*This is the position and size of the search text field*/
+#search #searchtextfield{
+	color:#6D6D6D; /*Change this to change the text color*/
+	font-size:12px;
+	border: none; 
+	width: 195px;
+	margin: 0;
+	position: relative;
+	border: none;
+	top: -7px;
+	right: 0px;
+}
+
+/*This is the positioning of the search button*/
+#search #searchbutton{
+	position: relative;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	right: 0;
+}
+/*This is the styling of the radio button labels*/
+#search label{
+	font-weight: bold;
+	color: #f5f5f5;/*Change this to change the text color*/
+	font-size: .7em;
+}
+
+/*This is the style for the footer; defines the background that runs the bottom of the page*/
+#footer{
+	display: block;
+	width: 100%;
+	min-height: 200px;
+	text-align: center;
+	margin: auto;
+	background: url('../images/footerBG.gif') repeat-x #030c1b;
+	padding-top: 3px;
+}
+/*Footer Links and content*/
+#footer_content{
+	display: block;
+	width: 960px;
+	min-height: 80px;
+	padding-top: 10px;
+	background: url('../images/footer_contentBG.gif') repeat-x top;
+	text-align: left;
+	margin: auto;
+	color: #CED4DF;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/*Styles the right and left box of the statewide footer */
+#footer_content .right, #footer_content .left{
+	padding: 10px 0;	
+}
+
+#footer_content .right{
+	text-align: right;
+	float: none;
+	font-size: .75em;
+}
+
+#footer_content .left{
+	text-align: left;	
+}
+
+/* Style the list of links in the footer */
+#footer_content ul{
+	list-style: none;
+	display: inline;
+	padding: 0;
+	font-size: .8em;
+}
+
+#footer_content ul li{
+	float: left;
+	padding: 0 10px 3px 0;
+}
+
+#footer_content ul li a, #footer_content a{
+	color: #CED4DF;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+#footer_content ul li a:hover, #footer_content ul li a:focus, #footer_content a:hover, #footer_content a:focus{
+	text-decoration: none;
+}
+
+#footer_content .right .center_item{
+	border-left: #526d96 solid 1px;
+	border-right: #526d96 solid 1px;
+	padding: 0 4px;
+}
+
+#footer_content .right .right_item{
+	border-left: #526d96 solid 1px;
+	padding: 0 0 0 4px;
+}
+
+#footer_content .right .left_item{
+	border-right: #526d96 solid 1px;
+	padding: 0 4px 0 0;
+}

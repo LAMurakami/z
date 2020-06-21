@@ -1,0 +1,123 @@
+<title>LAM Alaska - About an authenticated user</title>
+<center><h1>Making a CGI script recognize if being accessed by
+ an authenticated user.</h1></center>
+<h2>About this page</h2>
+This web page shows by example how to make a CGI script recognize if being
+ accessed by an authenticated user and act differently if so.
+The example shows a recent change to <a href=/man>the man perl cgi script
+ on this site</a>.
+The change was made so that some man pages would not be available to the public.
+<h3>Overview of the change</h3>
+<p>Although the change was implemented so that a single version of the man.cgi-pl
+ perl script handles both behaviors, a symbolic link was created in the
+ Private/Scripts folder pointing to the Public/Scripts version so that
+ the Apache server treats it as if it were two versions.
+<pre>ln -sT /var/www/html/Public/Scripts/man.cgi-pl /var/www/html/Private/Scripts/man.cgi-pl</pre>
+This is because the existence of the REMOTE_USER environment variable is used
+ which is only set by Apache for pages in a directory or subdirectory that requires
+ authentication.  The symbolic link allows there to be only one program (only one
+ place to edit and maintain) but have Apache control access to to what it treats as
+ a separate program. This then allows the program to test for the the existence of
+ the REMOTE_USER environment variable to control which set of man pages are made available.
+<h3>Perl cgi script code segment</h3>
+<pre>if (not defined $ENV{'REMOTE_USER'}) {     # If not an authenticated remote user
+    $ENV{'MANPATH'} = '/usr/share/man';    # Set MANPATH to omit local man pages.
+}</pre>
+The end effect of this change only affects the display of man pages by the Appache server
+ to unauthenticated users on the unsecured side of the website. A user who signs on to the
+ secure side of the website is unaffected.  A user who goes to the secure side and uses the
+ man link without authorizing will get an "Authorization Required!" message.
+<p>If unauthenticated, a user can only see man pages in the /usr/share/man tree.
+<h2>Apache configuration</h2>
+The change described above is dependant on an Apache configuration detailed below.
+<h3>Apache configuration description</h3>
+In the main Apache configuration file an Alias is set for /Public
+ and cgi-scripts are enabled in that directory.
+A number of locations including /Private are forced to be handled
+ by the secure side of the server (port 443).
+<p>
+In the default host configuraton file a document root is set 
+ but scripts are allowed as if they were in the root directory
+ with file names without an extension by a conditional rewrite rule.
+An aditional rewrite rule allows the man pages to be accesses as if
+ they were files in a man directory.
+<p>
+In the ssl virtual host configuraton file a different document root
+ is set, scripts are allowed anywhere within that directory tree and
+ Apache is instructed to follow symbolic links.
+ Again some scripts are allowed to be accessed as if they were in the
+ root directory with file names without an extension by a conditional
+ rewrite rule.  This rule is applied to scripts in the /Private
+ directory rather than the /Public directory and the Last flag is used
+ so that no other rules are checked when this rule is satisfied.
+The order of the rules and the Last flag make it so that if a script
+ exists in both the /Public and /Private folders the /Private script
+ will be used if accessed from the secured side of the site.
+A number of locations including /Private can only be accessed by
+ authenticated users.  These locations were previously forced to be
+ handled on the secure port which means the authentication process
+ only occurs on the secure port.
+<p>
+<h3>Apache configuration directives:</h3>
+In file: /etc/httpd/conf/httpd.conf
+<pre>...
+Alias /Public /var/www/html/Public
+&lt;Directory "/var/www/html/Public"&gt;
+   Options +ExecCGI
+   AddHandler cgi-script .cgi-pl
+&lt;/Directory&gt;
+...
+&lt;LocationMatch "^/(Log/On|Private|usage|ts|Bk|server-|phpMyAdmin|Squid|ErrorLogs|Install|cgi-bin)"&gt;
+   RewriteEngine on
+   RewriteCond %{SERVER_PORT} !^443$
+   RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
+&lt;/LocationMatch&gt;
+...</pre>
+In file: /etc/httpd/conf/vhosts.d/00_default_vhosts.conf
+<pre>...
+DocumentRoot "/var/www/no-ssl"
+...
+RewriteCond %{REQUEST_FILENAME} (.*)$
+   RewriteCond /var/www/html/Public/Scripts%1.cgi-pl -f
+   RewriteRule (.+)$ /Public/Scripts%1.cgi-pl [PT]
+RewriteRule ^/man/(.+)$ /Public/Scripts/man.cgi-pl?Submit=View&Keyword=$1 [PT]
+...</pre>
+In file: /etc/httpd/conf/vhosts.d/01_default_ssl_vhost.conf
+<pre>...
+DocumentRoot "/var/www/html"
+&lt;Directory "/var/www/html"&gt;
+   Options +ExecCGI FollowSymLinks
+   AddHandler cgi-script .cgi-pl
+&lt;/Directory&gt;
+...
+RewriteRule ^/man/(.+)$ /Private/Scripts/man.cgi-pl?Submit=View&Keyword=$1
+...
+RewriteCond %{REQUEST_FILENAME} (.*)$
+RewriteCond %{DOCUMENT_ROOT}/Private/Scripts%1.cgi-pl -f
+RewriteRule (.+)$ /Private/Scripts%1.cgi-pl [L]
+...
+&lt;LocationMatch "^/(Log/On|Private|usage|ts|Bk|Zz|server-.*|phpMyAdmin|Squid|ErrorLogs.*|Install|cgi-bin)"&gt;
+   SSLRequireSSL 
+   AuthType Basic
+   AuthName "Authenticated Users"
+   AuthUserFile /var/www/.htpasswd
+   AuthGroupFile /var/www/.htgroup
+   require group lam
+&lt;/LocationMatch&gt;
+&lt;Directory "/var/www/html/Private"&gt;
+   SSLRequireSSL 
+   AuthType Basic
+   AuthName "Authenticated Users"
+   AuthUserFile /var/www/.htpasswd
+   AuthGroupFile /var/www/.htgroup
+   require group lam
+&lt;/Directory&gt;
+...</pre><h2>Summary</h2>
+This page shows a small code segment and a relatively simple change but it is dependant
+ on the web server to set an environment variable under specific circumstances
+ that can then be tested by the program.  All the Apache configuration detailed above
+ was already in place but a minor change was made to one rule.
+That was to replace /Public with /Private in the rewrite rule for "^/man/(.+)$"
+ in the secure configuration file.
+<p>Please contact me if you have comments about this page.
+

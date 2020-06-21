@@ -1,0 +1,334 @@
+/* 
+    These elements are required for each web application and are stored in shared folder.
+    Modifications will affect all web applications.
+*/
+
+/* CSS Document */
+/*Style things that are going to be consistent throughout the page*/
+body{
+	font-family: Helvetica, Arial, sans-serif;	
+}
+
+/*Creates even spacing between all the potential content elements*/
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl{
+	margin: 0;
+	padding: 5px 0;
+	font-weight: normal;
+}
+/*Indents the headers so they all line up*/
+h1, h2, h3, h4, h5, h6{
+	text-indent: 10px;	
+}
+
+h1{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #3e3e3e;	
+	font-size: 1.5em;
+	font-variant: small-caps;
+	display: block;
+	background: #e8e8ef;
+	border: 1px solid #27579f;
+	padding: 2px;
+	margin-bottom: 10px;
+}
+
+h2{
+	color: 	#fff;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.3em;
+	background: #15365b url("../Images/HeaderBar.gif") repeat-x;
+	display: block;
+	width: 100%;
+	padding: 3px 0;
+	font-variant: small-caps;
+}
+
+h3{
+	
+	color: #1f4680;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+h4{
+	color: #000;	
+	font-size: 1em;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h5{
+	font-size: 1em;
+	color: #1f4680;
+	font-weight: bold;
+}
+
+h6{
+	font-size: .9em;
+	color: #000000;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+a{
+	color: #104AA2;	
+}
+
+a:visited{
+	color: #3e3e3e;	
+}
+
+a:hover, a:focus{
+	color: #104aa2;
+	text-decoration: none;
+}
+/*Positions the lists to line up with the rest of the page*/
+ul, ol, dl{
+	padding: 0 0 0 25px;
+}
+/*Positions paragraphs to line up with the rest of elements on the page*/
+p{
+	padding-left: 10px;	
+}
+
+p, ul, ol, dl{
+	font-size: .9em;
+	line-height: 1.3em;
+}
+/*Styles a link that is inside either a paragraph or a list*/
+p a, ul a, ol a, dl a{
+	color: #104AA2;
+	font-weight: bold;
+}
+
+p a:visited, ul a:visited, ol a:visited, dl a:visited{
+	color: #104AA2;
+	font-weight: normal;
+}
+
+p a:hover, p a:focus, ul a:hover, ul a:focus, ol a:hover, ol a:focus, dl a:hover, dl a:focus{
+	color: #104AA2;
+	text-decoration: none;
+}
+/*These div.box create a way to make certain sections stand out*/
+.box{
+	background: #D9E1EE;
+	border: 1px solid black;
+	color: #171C34;
+	margin: 5px 0;
+	padding:3px;
+}
+
+.none
+{
+    height:22px;
+}
+
+.box ul{
+	padding: 0;
+	margin: 0;
+}
+
+.box li{
+	border-bottom: 1px solid #bdc0cd;
+	padding: 5px 0 5px 10px;
+	list-style-position: inside;
+	list-style-image: url('../Images/Star.gif');
+	color: #171C34;
+	font-size: .8em;
+}
+
+.box p{
+	padding-right: 10px;	
+}
+
+/*This is for the header image */
+#photo_banner{
+	padding: 0;
+	margin: 0;
+	height: 172px;/*Set the height to the height of the photo or you get gaps on the bottom of the div*/
+	border-bottom: 4px solid #637ba5;
+	position: relative;
+	clear: both;
+}
+
+#photo_banner img{
+	padding: 0;
+	margin: 0;
+}
+
+/*This styles the breadcrumbs*/
+#breadcrumbs{
+	width: 945px;
+	background: url('../Images/department_footerBG.gif') repeat #EBEBEB;
+	border-bottom: solid 1px #d1d3d6;
+	color: #293042;
+	font-size: .7em;
+	font-weight: bold;
+	padding: 2px 0 2px 15px;
+	margin: 0;
+}
+
+#breadcrumbs a{
+	color: #293042;
+	text-decoration: none;
+	padding: 0 0 0 0;
+}
+
+#breadcrumbs a:hover, #breadcrumbs a:focus{
+	text-decoration: underline;	
+}
+
+/*This controls the main content area*/
+#content{
+	padding: 10px 0px 10px 0px;
+	background: #fff;
+}
+/*This styles the department footer*/
+#department_footer{
+	width: 930px;
+	padding: 10px 15px;
+	text-align: left;
+	margin: auto;
+	background: url('../Images/department_footerBG.gif') repeat #EBEBEB;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#department_footer .right{
+	text-align: right;
+	font-size: .75em;
+	color: #2A3858;
+}
+
+#department_footer ul{
+	list-style: none;
+	display: inline;
+}
+
+#department_footer ul li{
+	float: left;
+	padding: 0 10px 10px 0;
+	font-size: .8em;
+	
+}
+
+#department_footer ul li a, #department_footer a{
+	color: #2A3858;
+	text-decoration: underline;
+}
+
+#department_footer ul li a:hover, #department_footer ul li a:focus, #department_footer a:hover, #department_footer a:focus{
+	text-decoration: none;
+}
+
+#department_footer .right .center_item{
+	border-left:  #999 solid 1px;
+	border-right: #999 solid 1px;
+	padding: 0 4px;
+}
+
+#department_footer .right .right_item{
+	border-left: #999 solid 1px;
+	padding: 0 0 0 4px;
+}
+
+#department_footer .right .left_item{
+	border-right: #999 solid 1px;
+	padding: 0 4px 0 0;
+}
+
+/* BEGIN FIELDS */
+
+.row {
+    margin-bottom: 5px;
+    width:100%;
+    display:block;
+}
+   
+.field
+{
+  display:inline-block;  
+  margin-right: 5px;
+  vertical-align:top;
+}
+
+.field > div
+{
+    margin-left: 5px;
+}
+
+.field > label
+{
+    font-weight:bold;
+}
+
+.field-error 
+{
+    color:Red;
+    font-size:small;
+}
+
+/* END FIELDS */
+
+/* BEGIN ERROR */
+
+.error
+{
+    color:Red;
+    font-weight: bold;
+}
+
+/* END ERROR */
+
+/* BEGIN FILTER */
+
+#filter
+{
+    margin: 10px 10px 0 10px; 
+    padding: 0px;
+}
+        
+#filter>table
+{
+    width: 100%; 
+    border: 1px solid black; 
+    padding: 0px; 
+    background-color: #FAFAFA; 
+    text-align:left;
+}
+        
+#filter .filter_label
+{
+    text-align:right;
+    font-weight:bold;
+}
+        
+#filter h4
+{
+    background-color:#DDDDFF; 
+    /*cursor:pointer; */
+    color: #104AA2; 
+    border:1px solid black; 
+    padding: 0px; 
+    margin: 0px; 
+    text-align:center;
+}
+        
+/*#filter h4:hover
+{
+    background-color:Gray;
+    color: White;
+}*/
+/* END FILTER */
+
+/* Begin Labels */
+
+.label, .label *{
+    font-weight: bold;
+}
+
+.label td{
+    vertical-align: bottom;
+}
+
+/* End Labels*/
