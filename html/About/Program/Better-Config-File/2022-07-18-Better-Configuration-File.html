@@ -1,0 +1,52 @@
+<title>LAM Alaska Better Configuration File documentation</title>
+<center>
+<h1>Better Configuration File documentation</h1>
+</center>
+
+<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr">
+<div><p>The <a rel="nofollow" href="/Better-Config-File">Better-Config-File</a> Common Gateway Interface (CGI) Perl script uses a number of examples from the Perl Cookbook to provide an example to myself of better configuration file handling.
+</p>
+<ul><li><a rel="nofollow" href="https://github.com/LAMurakami/no-ssl/blob/master/html/Public/Scripts/Better-Config-File.cgi-pl">Better-Config-File program source</a></li>
+<li><a rel="nofollow" href="https://github.com/LAMurakami/no-ssl/blob/master/site_perl-LAM/LAM.pm">Better-Config-File supporting perl module source</a></li></ul>
+<p>I refer to the <a rel="nofollow" href="http://en.wikipedia.org/wiki/Perl_Cookbook">Perl Cookbook</a> and <a rel="nofollow" href="http://en.wikipedia.org/wiki/Programming_Perl">Programming Perl (the Camel Book)</a> often when trying to write better perl code.
+</p><p>The Better-Config-File Common Gateway Interface (CGI) Perl script was created to test the configuration file populating a hash method of using a configuration file and was implemented as a loadConfigHash() subroutine in numerous programs in 2009.  In 2009 I was still using Revision Control System (RCS) and my default for CGI Perl scripts included a LAM::displaySource() call that added the feature to display source RCS differences and more.  In 2022 I have almost completely converted to <a rel="nofollow" href="https://en.wikipedia.org/wiki/Git">git</a> although in some cases the old RCS archives are within the git repository.  I have modified the LAM::displaySource() subroutine to accept a parameter and I modified this program to link to the source on GitHub.  I made some fixes including recovering the final version of the original configuration test file which is hard-coded into this test program and the default for the private version.
+</p><p>Some of the programs I first used this in have become obsolete including <a rel="nofollow" href="https://github.com/LAMurakami/no-ssl/blob/master/local_scripts/IPStatus.pl">IPStatus.pl</a> and <a rel="nofollow" href="https://github.com/LAMurakami/no-ssl/blob/master/local_scripts/runFTPjob.pl">runFTPjob.pl</a> but it is still used in many including by most popular backup program <a rel="nofollow" href="https://github.com/LAMurakami/no-ssl/blob/master/local_scripts/BkRsync.pl">BkRsync.pl</a> which is used along with a number of configuration files by symbolic links to the program.
+</p>
+<h2><span id="Log">Log</span></h2>
+<p>Published to: <a rel="nofollow" href="http://z.lam1.us/About/Program/Better-Config-File">http://z.lam1.us/About/Program/Better-Config-File</a>
+</p>
+<ul><li>Sunday, July 17, 2022 - Recovered my first "Better Configuration File" test configuration file.
+<ul><li>Used new LAM::displaySource() parameter to show github source if requested.</li>
+<li>Created this page from <a rel="nofollow" href="http://z.lam1.us/About/Program/Better-Config-File">http://z.lam1.us/About/Program/Better-Config-File</a> updated and then republished.</li></ul></li>
+<li>Saturday, January 24, 2009 @ 12:38:58 AM (Alaska Time) - I now have <a rel="nofollow" href="https://ak20.lam1.us/Better-Config-File">a Private version of the program</a> That displays a form allowing the user to specify the configuration file to parse. The file can also be submitted as a GET or POST parameter and allows me to code URLs in Private documentation that will display the values of a particular configuration file.</li>
+<li>Friday, January 23, 2009 @ 3:30:13 AM (Alaska Time) - I keep testing, programming and documenting and am up to version 1.7 of this program. In this version I added an alternate means of ending the Basic Better Configuration File Parameter processing. This will allow me to extend it with a very special purpose. I might be ready to write runFTPjob. This version processes versions 1.4 and 1.5 of the configuration file with the same resulting parameter list by ignoring version 1.5 of the file after the new terminator.</li>
+<li>Thursday, January 22, 2009 @ 10:23:15 PM (Alaska Time) - I have decided to make this brand new program the second public program documented in the /About/Program area of my site.
+<ul><li>I included links to the program source, file revision history, and pending source file changes that are automatically available when I use one of my current Common Gateway Interface (CGI) Perl script templates. These links have been available for my public programs for some time but I have not gotten around to documentation in a more human readable form. I do spend a fair amount of time maiking my source readable to me and including comments to help in that effort. I also included a link to the LAM perl module which is the main custom perl module I use in perl web page programs for my site.</li></ul></li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20220719004720
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.002 seconds
+Real time usage: 0.002 seconds
+Preprocessor visited node count: 3/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key wikidb:pcache:idhash:410-0!canonical and timestamp 20220719004720 and revision id 6280. Serialized with JSON.
+ -->
+</div>
+<div>Retrieved from "<a dir="ltr" href="https://ak20.lam1.us/A/index.php?title=Better_Configuration_File_documentation&amp;oldid=6280">https://ak20.lam1.us/A/index.php?title=Better_Configuration_File_documentation&amp;oldid=6280</a>"</div></div>
+<!-- end content -->
+</body></html>
